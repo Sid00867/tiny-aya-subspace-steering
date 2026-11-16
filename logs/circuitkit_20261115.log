@@ -1,0 +1,348 @@
+2026-11-15 13:59:36,727 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 13:59:54,686 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 13:59:54,687 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 4.768 (1 nodes)
+2026-11-15 13:59:54,688 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 12.000 (1 nodes)
+2026-11-15 13:59:54,689 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 12.000 (1 nodes)
+2026-11-15 13:59:54,689 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 12.000 (1 nodes)
+2026-11-15 14:01:35,562 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:01:46,990 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:01:46,991 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.014 (1 nodes)
+2026-11-15 14:01:46,991 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 7.414 (1 nodes)
+2026-11-15 14:01:46,991 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 5.735 (1 nodes)
+2026-11-15 14:01:46,991 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 6.029 (1 nodes)
+2026-11-15 14:03:03,694 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:03:17,179 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:03:17,179 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.038 (1 nodes)
+2026-11-15 14:03:17,179 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 7.423 (1 nodes)
+2026-11-15 14:03:17,180 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 7.050 (1 nodes)
+2026-11-15 14:03:17,180 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 3.293 (1 nodes)
+2026-11-15 14:03:18,942 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:03:18,943 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:03:18,943 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:03:18,943 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:03:18,943 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:03:18,943 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:03:18,944 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:03:18,944 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:03:18,944 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:03:18,944 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:07:20,061 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:07:29,209 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:07:29,209 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.145 (1 nodes)
+2026-11-15 14:07:29,209 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.914 (1 nodes)
+2026-11-15 14:07:29,209 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.743 (1 nodes)
+2026-11-15 14:07:29,210 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.748 (1 nodes)
+2026-11-15 14:07:29,908 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:07:29,957 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:29,958 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:29,958 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:29,958 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:29,958 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:29,958 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:29,958 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:29,958 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:29,958 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:07:40,062 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:07:45,559 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:07:45,560 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.173 (1 nodes)
+2026-11-15 14:07:45,560 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.672 (1 nodes)
+2026-11-15 14:07:45,560 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.588 (1 nodes)
+2026-11-15 14:07:45,561 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.421 (1 nodes)
+2026-11-15 14:07:45,561 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L7' with coefficient 0.376 (1 nodes)
+2026-11-15 14:07:46,373 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:07:46,373 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:46,374 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:46,375 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:46,375 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:46,375 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:46,376 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:46,376 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:46,376 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:07:46,376 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:07:59,572 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:08:04,529 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:08:04,530 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 5.084 (1 nodes)
+2026-11-15 14:08:04,530 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 5.063 (1 nodes)
+2026-11-15 14:08:04,530 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 4.963 (1 nodes)
+2026-11-15 14:08:04,530 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 5.016 (1 nodes)
+2026-11-15 14:08:05,015 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:08:05,015 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:05,016 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:05,016 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:05,016 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:05,016 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:05,016 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:05,017 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:05,017 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:05,017 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:08:16,065 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:08:20,411 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:08:20,412 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.153 (1 nodes)
+2026-11-15 14:08:20,412 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.893 (1 nodes)
+2026-11-15 14:08:20,412 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.862 (1 nodes)
+2026-11-15 14:08:20,412 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.779 (1 nodes)
+2026-11-15 14:08:21,112 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:08:21,113 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:21,113 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:21,113 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:21,113 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:21,113 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:21,113 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:21,113 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:21,113 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:08:21,114 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:10:48,230 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:11:00,664 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:11:00,667 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.147 (1 nodes)
+2026-11-15 14:11:00,668 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.877 (1 nodes)
+2026-11-15 14:11:00,668 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.802 (1 nodes)
+2026-11-15 14:11:00,669 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.735 (1 nodes)
+2026-11-15 14:11:01,965 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:11:01,965 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:01,965 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:01,967 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:01,967 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:01,967 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:01,967 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:01,967 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:01,967 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:01,967 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:11:13,358 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:11:20,297 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:11:20,298 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L8' with coefficient 4.868 (1 nodes)
+2026-11-15 14:11:20,298 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L9' with coefficient 4.629 (1 nodes)
+2026-11-15 14:11:20,299 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L10' with coefficient 4.763 (1 nodes)
+2026-11-15 14:11:21,076 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:11:21,076 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:21,076 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:21,076 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:21,076 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:21,077 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:21,077 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:21,077 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:21,077 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:21,077 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:11:33,717 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:11:41,385 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:11:41,386 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 2.450 (1 nodes)
+2026-11-15 14:11:41,386 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L7' with coefficient 0.816 (1 nodes)
+2026-11-15 14:11:41,386 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L8' with coefficient 0.691 (1 nodes)
+2026-11-15 14:11:41,387 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L9' with coefficient 0.839 (1 nodes)
+2026-11-15 14:11:41,387 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L10' with coefficient 0.788 (1 nodes)
+2026-11-15 14:11:42,134 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:11:42,135 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:42,135 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:42,135 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:42,136 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:42,136 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:42,136 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:42,136 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:42,136 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:11:42,136 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:11:55,311 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:12:00,012 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:12:00,012 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.085 (1 nodes)
+2026-11-15 14:12:00,012 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.890 (1 nodes)
+2026-11-15 14:12:00,013 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.839 (1 nodes)
+2026-11-15 14:12:00,013 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.753 (1 nodes)
+2026-11-15 14:12:01,102 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:12:01,102 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:12:01,103 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:12:01,104 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:12:01,104 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:12:01,104 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:12:01,104 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:12:01,105 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:12:01,105 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:12:01,105 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:17:53,292 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:18:06,085 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:18:06,086 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.228 (1 nodes)
+2026-11-15 14:18:06,086 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.930 (1 nodes)
+2026-11-15 14:18:06,086 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.872 (1 nodes)
+2026-11-15 14:18:06,086 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.753 (1 nodes)
+2026-11-15 14:18:07,147 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:18:07,150 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:07,150 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:07,150 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:07,151 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:07,151 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:07,151 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:07,151 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:07,151 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:07,151 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:18:21,721 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:18:34,731 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:18:34,731 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 2.382 (1 nodes)
+2026-11-15 14:18:34,731 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.916 (1 nodes)
+2026-11-15 14:18:34,731 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L7' with coefficient 0.933 (1 nodes)
+2026-11-15 14:18:34,732 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L8' with coefficient 0.807 (1 nodes)
+2026-11-15 14:18:34,733 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L9' with coefficient 0.884 (1 nodes)
+2026-11-15 14:18:36,468 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:18:36,468 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:36,469 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:36,469 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:36,469 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:36,470 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:36,470 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:36,471 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:36,471 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:18:36,471 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:19:08,663 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:19:20,331 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:19:20,332 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 4.584 (1 nodes)
+2026-11-15 14:19:20,333 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 4.639 (1 nodes)
+2026-11-15 14:19:20,333 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 4.694 (1 nodes)
+2026-11-15 14:19:20,333 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 4.790 (1 nodes)
+2026-11-15 14:19:21,565 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:19:21,566 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:21,568 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:21,568 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:21,569 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:21,569 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:21,570 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:21,570 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:21,570 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:21,571 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:19:47,522 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:19:53,593 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:19:53,594 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.186 (1 nodes)
+2026-11-15 14:19:53,595 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.933 (1 nodes)
+2026-11-15 14:19:53,595 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.785 (1 nodes)
+2026-11-15 14:19:53,595 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.748 (1 nodes)
+2026-11-15 14:19:54,464 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:19:54,465 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:54,466 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:54,466 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:54,466 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:54,466 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:54,467 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:54,467 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:54,467 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:19:54,467 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:23:48,461 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:24:02,320 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:24:02,320 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.187 (1 nodes)
+2026-11-15 14:24:02,320 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.910 (1 nodes)
+2026-11-15 14:24:02,320 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.784 (1 nodes)
+2026-11-15 14:24:02,320 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.847 (1 nodes)
+2026-11-15 14:24:03,202 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:24:03,202 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:03,202 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:03,203 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:03,203 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:03,203 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:03,203 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:03,203 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:03,203 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:03,203 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:24:13,621 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:24:18,415 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:24:18,416 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L8' with coefficient 1.258 (1 nodes)
+2026-11-15 14:24:18,416 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L9' with coefficient 0.727 (1 nodes)
+2026-11-15 14:24:18,417 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L10' with coefficient 0.491 (1 nodes)
+2026-11-15 14:24:19,117 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:24:19,118 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:19,118 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:19,119 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:19,119 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:19,119 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:19,119 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:19,119 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:19,119 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:19,120 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:24:29,519 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:24:33,820 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:24:33,820 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L8' with coefficient 1.347 (1 nodes)
+2026-11-15 14:24:33,820 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L9' with coefficient 0.701 (1 nodes)
+2026-11-15 14:24:33,820 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L10' with coefficient 0.562 (1 nodes)
+2026-11-15 14:24:34,299 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:24:34,299 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:34,299 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:34,299 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:34,299 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:34,300 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:34,300 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:34,300 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:34,300 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:34,300 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 14:24:45,072 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 14:24:49,511 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 14:24:49,511 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.144 (1 nodes)
+2026-11-15 14:24:49,511 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.963 (1 nodes)
+2026-11-15 14:24:49,512 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.938 (1 nodes)
+2026-11-15 14:24:49,512 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.844 (1 nodes)
+2026-11-15 14:24:50,171 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 14:24:50,171 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:50,171 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:50,172 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:50,172 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:50,172 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:50,172 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:50,172 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:50,172 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 14:24:50,172 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 16:36:05,596 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 16:36:19,011 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 16:36:19,012 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.048 (1 nodes)
+2026-11-15 16:36:19,012 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.907 (1 nodes)
+2026-11-15 16:36:19,012 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.748 (1 nodes)
+2026-11-15 16:36:19,012 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.819 (1 nodes)
+2026-11-15 16:36:20,060 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 16:36:20,060 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:20,060 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:20,060 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:20,061 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:20,061 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:20,061 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:20,061 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:20,061 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:20,061 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 16:36:30,074 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 16:36:33,677 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 16:36:33,678 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.217 (1 nodes)
+2026-11-15 16:36:33,678 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.738 (1 nodes)
+2026-11-15 16:36:33,679 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.586 (1 nodes)
+2026-11-15 16:36:33,679 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.477 (1 nodes)
+2026-11-15 16:36:34,444 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 16:36:34,444 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:34,445 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:34,445 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:34,445 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:34,445 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:34,445 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:34,445 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:34,445 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:34,445 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 16:36:44,327 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 16:36:47,463 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 16:36:47,464 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.113 (1 nodes)
+2026-11-15 16:36:47,464 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.699 (1 nodes)
+2026-11-15 16:36:47,465 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.478 (1 nodes)
+2026-11-15 16:36:47,465 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.401 (1 nodes)
+2026-11-15 16:36:47,886 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 16:36:47,887 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:47,887 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:47,887 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:47,887 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:47,887 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:47,887 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:47,887 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:47,887 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:36:47,888 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial
+2026-11-15 16:36:58,267 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-15 16:37:01,807 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-15 16:37:01,808 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L3' with coefficient 1.101 (1 nodes)
+2026-11-15 16:37:01,808 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L4' with coefficient 0.980 (1 nodes)
+2026-11-15 16:37:01,809 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L5' with coefficient 0.811 (1 nodes)
+2026-11-15 16:37:01,809 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'SV_Matched_L6' with coefficient 0.670 (1 nodes)
+2026-11-15 16:37:02,489 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:255 - Initialized SafetyDatasetSynthesis
+2026-11-15 16:37:02,490 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:37:02,490 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:37:02,490 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:37:02,490 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:37:02,490 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:37:02,490 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:37:02,490 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:37:02,490 - circuitkit.applications.steering.steering_enhanced - INFO - generate_adversarial_prompts:294 - Generated 3 adversarial prompts
+2026-11-15 16:37:02,491 - circuitkit.applications.steering.steering_enhanced - INFO - create_safety_benchmark:357 - Created safety benchmark: 8 core, 0 related, 16 adversarial

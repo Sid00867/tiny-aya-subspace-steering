@@ -1,0 +1,7 @@
+2026-11-14 13:16:56,272 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-14 13:16:56,274 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'lr' with coefficient 1.000 (2 nodes)
+2026-11-14 13:16:56,274 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:40 - Initialized SteeringComposer
+2026-11-14 13:16:56,275 - circuitkit.applications.steering.steering_enhanced - INFO - add_steering:59 - Added steering 'diff_of_means' with coefficient 1.000 (1 nodes)
+2026-11-14 13:16:56,288 - circuitkit.applications.steering.steering_enhanced - INFO - __init__:388 - Initialized SteeringEvaluationGates
+2026-11-14 13:16:56,290 - circuitkit.applications.steering.steering_enhanced - WARNING - check_steering_consistency:463 - Steering consistency low: 0.091 < 0.8
+2026-11-14 13:16:56,291 - circuitkit.applications.steering.steering_enhanced - WARNING - run_all_checks:557 - Safety checks failed: ['consistency']

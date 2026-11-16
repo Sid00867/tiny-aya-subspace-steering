@@ -1,0 +1,14 @@
+Model,Config,Mean_Delta_L2,Semantic_Sim,ETHICS_Overall (%),Commonsense_Acc (%),Deontology_Acc (%),Justice_Acc (%),Utilitarian_Acc (%),Virtue_Acc (%)
+tiny-aya-global,Base (Unsteered),0.0,1.0,61.6,68.0,58.0,60.0,58.0,64.0
+tiny-aya-global,SV [Exact L2-Norm-Matched],1.647,0.9933,61.2,66.0,62.0,60.0,56.0,62.0
+tiny-aya-global,PCA Subspace (k=5),1.647,0.9886,61.2,62.0,68.0,58.0,54.0,64.0
+tiny-aya-fire,Base (Unsteered),0.0,1.0,57.6,66.0,54.0,58.0,52.0,58.0
+tiny-aya-fire,ZeroShot Transfer: Global SV -> Regional,0.25,0.9996,58.4,66.0,54.0,60.0,54.0,58.0
+tiny-aya-fire,ZeroShot Transfer: Global PCA (k=5) -> Regional,1.713,0.9952,60.0,70.0,60.0,54.0,56.0,60.0
+tiny-aya-fire,Native SV [L2-Norm-Matched],1.626,0.9983,57.6,66.0,54.0,60.0,52.0,56.0
+tiny-aya-fire,Native PCA Subspace (k=5),1.626,0.9951,59.2,68.0,58.0,54.0,56.0,60.0
+tiny-aya-water,Base (Unsteered),0.0,1.0,58.0,64.0,56.0,60.0,54.0,56.0
+tiny-aya-water,ZeroShot Transfer: Global SV -> Regional,0.25,0.9995,59.6,66.0,58.0,62.0,56.0,56.0
+tiny-aya-water,ZeroShot Transfer: Global PCA (k=5) -> Regional,1.619,0.9962,59.6,64.0,58.0,62.0,54.0,60.0
+tiny-aya-water,Native SV [L2-Norm-Matched],1.568,0.9975,58.0,66.0,54.0,60.0,54.0,56.0
+tiny-aya-water,Native PCA Subspace (k=5),1.568,0.9979,59.6,64.0,58.0,62.0,54.0,60.0

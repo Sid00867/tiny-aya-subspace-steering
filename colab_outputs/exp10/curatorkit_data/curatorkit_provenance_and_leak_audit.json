@@ -1,0 +1,47 @@
+{
+  "suite_id": "exp10_operator_rank_decomposition_fe",
+  "raw_train_count": 440,
+  "curator_passed_count": 440,
+  "curator_rejected_count": 0,
+  "cross_split_exact_leaks_removed": 0,
+  "cross_split_minhash_leaks_removed": 0,
+  "final_certified_train_count": 440,
+  "heldout_test_count": 220,
+  "post_filter_exact_leaks": 0,
+  "minhash_threshold": 0.85,
+  "curator_stage_counts": {
+    "JSONLReader": {
+      "output_count": 440,
+      "rejected_count": 0
+    },
+    "SchemaGate": {
+      "input_count": 440,
+      "output_count": 440,
+      "probe_recovered": 0,
+      "rejected_count": 0
+    },
+    "ExactDeduplicator": {
+      "input_count": 440,
+      "output_count": 440
+    },
+    "MinHashDeduplicator": {
+      "input_count": 440,
+      "output_count": 440
+    },
+    "TextCleaner": {
+      "input_count": 440,
+      "output_count": 440
+    },
+    "SecretsGate": {
+      "input_count": 440,
+      "output_count": 440,
+      "probe_recovered": 0,
+      "rejected_count": 0
+    },
+    "DPOExporter": {
+      "exported_count": 440
+    }
+  },
+  "leaked_samples_removed": [],
+  "curated_dpo_sha256": "824d1558c16342669d6bfd84a1a52a1cfad987bb90a0353bf21a8f523f660a10"
+}

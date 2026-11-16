@@ -1,0 +1,61 @@
+Task,Method,Family,Rank_k,Operator,Mean_Delta_L2,Semantic_Sim,Overall_Acc (%),Safe_Comply (%),Harm_Refuse (%),XSTest_OR (%),FaithEval_Counterfactual,FaithEval_Inconsistent,FaithEval_Unanswerable,TruthfulQA
+OverRefusal,Base,base,0,none,0.0,1.0,55.29,20.0,100.0,70.49,,,,
+OverRefusal,SV Diff-of-Means [Addi],sv_dom,1,additive,5.1465,0.9781,52.94,15.79,100.0,77.05,,,,
+OverRefusal,SV Diff-of-Means [Proj],sv_dom,1,projection,4.9983,0.9903,52.94,15.79,100.0,77.05,,,,
+OverRefusal,Unsup PCA (k=1) [Addi],unsup_pca,1,additive,5.1464,0.9981,53.53,16.84,100.0,75.41,,,,
+OverRefusal,Unsup PCA (k=1) [Proj],unsup_pca,1,projection,4.1798,0.997,78.24,62.11,98.67,14.75,,,,
+OverRefusal,Anchored PCA (k=1) [Proj],anch_pca,1,projection,4.9983,0.9903,52.94,15.79,100.0,77.05,,,,
+OverRefusal,Unsup PCA (k=2) [Addi],unsup_pca,2,additive,5.1467,0.989,53.53,16.84,100.0,75.41,,,,
+OverRefusal,Unsup PCA (k=2) [Proj],unsup_pca,2,projection,5.1023,0.9965,74.71,54.74,100.0,22.95,,,,
+OverRefusal,Anchored PCA (k=2) [Addi],anch_pca,2,additive,5.1466,0.9893,62.35,32.63,100.0,50.82,,,,
+OverRefusal,Anchored PCA (k=2) [Proj],anch_pca,2,projection,5.1158,0.9945,74.71,55.79,98.67,22.95,,,,
+OverRefusal,Supervised SVD (k=2) [Addi],sup_svd,2,additive,5.1466,0.9857,65.29,37.89,100.0,42.62,,,,
+OverRefusal,Supervised SVD (k=2) [Proj],sup_svd,2,projection,4.8381,0.9949,74.12,53.68,100.0,24.59,,,,
+OverRefusal,Unsup PCA (k=3) [Addi],unsup_pca,3,additive,5.1461,0.9789,52.94,15.79,100.0,77.05,,,,
+OverRefusal,Unsup PCA (k=3) [Proj],unsup_pca,3,projection,4.6122,0.9895,75.29,55.79,100.0,24.59,,,,
+OverRefusal,Anchored PCA (k=3) [Addi],anch_pca,3,additive,5.1472,0.991,59.41,27.37,100.0,59.02,,,,
+OverRefusal,Anchored PCA (k=3) [Proj],anch_pca,3,projection,5.0413,0.9945,71.18,48.42,100.0,29.51,,,,
+OverRefusal,Supervised SVD (k=3) [Addi],sup_svd,3,additive,5.1471,0.986,65.88,38.95,100.0,40.98,,,,
+OverRefusal,Supervised SVD (k=3) [Proj],sup_svd,3,projection,5.0038,0.9934,76.47,58.95,98.67,21.31,,,,
+OverRefusal,Unsup PCA (k=5) [Addi],unsup_pca,5,additive,5.1466,0.9855,57.65,24.21,100.0,63.93,,,,
+OverRefusal,Unsup PCA (k=5) [Proj],unsup_pca,5,projection,4.3182,0.9848,57.65,24.21,100.0,63.93,,,,
+OverRefusal,Anchored PCA (k=5) [Addi],anch_pca,5,additive,5.1465,0.9864,60.0,28.42,100.0,57.38,,,,
+OverRefusal,Anchored PCA (k=5) [Proj],anch_pca,5,projection,4.8529,0.9834,65.88,38.95,100.0,44.26,,,,
+OverRefusal,Supervised SVD (k=5) [Addi],sup_svd,5,additive,5.1463,0.9743,65.88,38.95,100.0,40.98,,,,
+OverRefusal,Supervised SVD (k=5) [Proj],sup_svd,5,projection,4.8786,0.9847,72.94,51.58,100.0,27.87,,,,
+OverRefusal,Unsup PCA (k=8) [Addi],unsup_pca,8,additive,5.1472,0.9685,54.71,18.95,100.0,72.13,,,,
+OverRefusal,Unsup PCA (k=8) [Proj],unsup_pca,8,projection,4.3403,0.989,60.59,29.47,100.0,55.74,,,,
+OverRefusal,Anchored PCA (k=8) [Addi],anch_pca,8,additive,5.1465,0.9923,61.18,30.53,100.0,54.1,,,,
+OverRefusal,Anchored PCA (k=8) [Proj],anch_pca,8,projection,4.7544,0.9907,59.41,27.37,100.0,59.02,,,,
+OverRefusal,Supervised SVD (k=8) [Addi],sup_svd,8,additive,5.1466,0.9773,58.24,25.26,100.0,62.3,,,,
+OverRefusal,Supervised SVD (k=8) [Proj],sup_svd,8,projection,5.3056,0.9911,59.41,27.37,100.0,60.66,,,,
+Epistemic,Base,base,0,none,0.0,1.0,61.82,,,,47.27,54.55,100.0,45.45
+Epistemic,SV Diff-of-Means [Addi],sv_dom,1,additive,1.4085,0.8664,65.91,,,,47.27,69.09,100.0,47.27
+Epistemic,SV Diff-of-Means [Proj],sv_dom,1,projection,8.4175,0.9364,54.55,,,,43.64,27.27,100.0,47.27
+Epistemic,Unsup PCA (k=1) [Addi],unsup_pca,1,additive,1.4084,0.8912,61.82,,,,45.45,54.55,100.0,47.27
+Epistemic,Unsup PCA (k=1) [Proj],unsup_pca,1,projection,2.7661,0.966,61.82,,,,43.64,58.18,100.0,45.45
+Epistemic,Anchored PCA (k=1) [Proj],anch_pca,1,projection,8.4175,0.9364,54.55,,,,43.64,27.27,100.0,47.27
+Epistemic,Unsup PCA (k=2) [Addi],unsup_pca,2,additive,1.4085,0.8805,65.91,,,,47.27,69.09,100.0,47.27
+Epistemic,Unsup PCA (k=2) [Proj],unsup_pca,2,projection,3.1624,0.9439,55.0,,,,43.64,30.91,100.0,45.45
+Epistemic,Anchored PCA (k=2) [Addi],anch_pca,2,additive,1.4086,0.9305,66.36,,,,47.27,72.73,100.0,45.45
+Epistemic,Anchored PCA (k=2) [Proj],anch_pca,2,projection,2.6735,0.9417,55.45,,,,43.64,30.91,100.0,47.27
+Epistemic,Supervised SVD (k=2) [Addi],sup_svd,2,additive,1.4086,0.9254,66.82,,,,49.09,70.91,100.0,47.27
+Epistemic,Supervised SVD (k=2) [Proj],sup_svd,2,projection,2.9699,0.9445,54.55,,,,43.64,27.27,100.0,47.27
+Epistemic,Unsup PCA (k=3) [Addi],unsup_pca,3,additive,1.4085,0.941,65.45,,,,47.27,67.27,100.0,47.27
+Epistemic,Unsup PCA (k=3) [Proj],unsup_pca,3,projection,2.7927,0.9495,55.0,,,,43.64,30.91,100.0,45.45
+Epistemic,Anchored PCA (k=3) [Addi],anch_pca,3,additive,1.4085,0.9462,65.0,,,,50.91,63.64,100.0,45.45
+Epistemic,Anchored PCA (k=3) [Proj],anch_pca,3,projection,2.631,0.9464,54.55,,,,43.64,30.91,100.0,43.64
+Epistemic,Supervised SVD (k=3) [Addi],sup_svd,3,additive,1.4086,0.9669,64.55,,,,47.27,67.27,100.0,43.64
+Epistemic,Supervised SVD (k=3) [Proj],sup_svd,3,projection,2.7539,0.9528,53.18,,,,40.0,30.91,100.0,41.82
+Epistemic,Unsup PCA (k=5) [Addi],unsup_pca,5,additive,1.4087,0.967,64.09,,,,47.27,63.64,100.0,45.45
+Epistemic,Unsup PCA (k=5) [Proj],unsup_pca,5,projection,1.4039,0.9803,58.18,,,,41.82,47.27,100.0,43.64
+Epistemic,Anchored PCA (k=5) [Addi],anch_pca,5,additive,1.4085,0.9868,62.27,,,,49.09,56.36,100.0,43.64
+Epistemic,Anchored PCA (k=5) [Proj],anch_pca,5,projection,1.8346,0.9819,56.82,,,,41.82,43.64,100.0,41.82
+Epistemic,Supervised SVD (k=5) [Addi],sup_svd,5,additive,1.4085,0.9804,62.73,,,,49.09,58.18,100.0,43.64
+Epistemic,Supervised SVD (k=5) [Proj],sup_svd,5,projection,2.6246,0.9544,53.18,,,,41.82,29.09,100.0,41.82
+Epistemic,Unsup PCA (k=8) [Addi],unsup_pca,8,additive,1.4086,0.9741,64.55,,,,49.09,63.64,100.0,45.45
+Epistemic,Unsup PCA (k=8) [Proj],unsup_pca,8,projection,1.4374,0.9754,58.64,,,,43.64,49.09,100.0,41.82
+Epistemic,Anchored PCA (k=8) [Addi],anch_pca,8,additive,1.4086,0.986,61.36,,,,45.45,56.36,100.0,43.64
+Epistemic,Anchored PCA (k=8) [Proj],anch_pca,8,projection,1.5025,0.9728,58.64,,,,43.64,47.27,100.0,43.64
+Epistemic,Supervised SVD (k=8) [Addi],sup_svd,8,additive,1.4085,0.9872,62.73,,,,47.27,60.0,100.0,43.64
+Epistemic,Supervised SVD (k=8) [Proj],sup_svd,8,projection,2.5935,0.9568,53.18,,,,40.0,30.91,100.0,41.82

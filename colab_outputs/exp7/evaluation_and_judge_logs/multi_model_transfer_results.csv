@@ -1,0 +1,14 @@
+Model,Config,Mean_Delta_L2,Semantic_Sim,Joint_IH_Compliance (%),SystemCheck_Pass (%),IHEval_Pass (%),MultiIF_Retain (%)
+tiny-aya-global,Base (Unsteered),0.0,1.0,30.71,0.0,67.0,23.75
+tiny-aya-global,SV [Exact L2-Norm-Matched],1.404,0.9751,32.5,7.0,67.0,21.25
+tiny-aya-global,PCA Subspace (k=5),1.377,0.9267,32.86,0.0,65.0,33.75
+tiny-aya-fire,Base (Unsteered),0.0,1.0,32.14,0.0,66.0,30.0
+tiny-aya-fire,ZeroShot Transfer: Global SV -> Regional,0.598,0.988,30.36,0.0,66.0,23.75
+tiny-aya-fire,ZeroShot Transfer: Global PCA (k=5) -> Regional,1.56,0.9651,33.21,0.0,65.0,35.0
+tiny-aya-fire,Native SV [L2-Norm-Matched],1.632,0.9665,32.86,6.0,66.0,25.0
+tiny-aya-fire,Native PCA Subspace (k=5),1.596,0.9551,33.93,0.0,65.0,37.5
+tiny-aya-water,Base (Unsteered),0.0,1.0,31.07,0.0,66.0,26.25
+tiny-aya-water,ZeroShot Transfer: Global SV -> Regional,0.549,0.9882,30.36,0.0,66.0,23.75
+tiny-aya-water,ZeroShot Transfer: Global PCA (k=5) -> Regional,1.432,0.927,31.43,0.0,65.0,28.75
+tiny-aya-water,Native SV [L2-Norm-Matched],1.437,0.9796,34.64,11.0,66.0,25.0
+tiny-aya-water,Native PCA Subspace (k=5),1.427,0.9181,31.43,0.0,65.0,28.75

@@ -1,0 +1,47 @@
+{
+  "suite_id": "exp6_overrefusal_compliance",
+  "raw_train_count": 800,
+  "curator_passed_count": 797,
+  "curator_rejected_count": 0,
+  "cross_split_exact_leaks_removed": 0,
+  "cross_split_minhash_leaks_removed": 0,
+  "final_certified_train_count": 797,
+  "heldout_test_count": 300,
+  "post_filter_exact_leaks": 0,
+  "minhash_threshold": 0.85,
+  "curator_stage_counts": {
+    "JSONLReader": {
+      "output_count": 800,
+      "rejected_count": 0
+    },
+    "SchemaGate": {
+      "input_count": 800,
+      "output_count": 800,
+      "probe_recovered": 0,
+      "rejected_count": 0
+    },
+    "ExactDeduplicator": {
+      "input_count": 800,
+      "output_count": 800
+    },
+    "MinHashDeduplicator": {
+      "input_count": 800,
+      "output_count": 797
+    },
+    "TextCleaner": {
+      "input_count": 797,
+      "output_count": 797
+    },
+    "SecretsGate": {
+      "input_count": 797,
+      "output_count": 797,
+      "probe_recovered": 0,
+      "rejected_count": 0
+    },
+    "DPOExporter": {
+      "exported_count": 797
+    }
+  },
+  "leaked_samples_removed": [],
+  "curated_dpo_sha256": "00d7d248c2e1cfc4d3837f62d453a39f8b592f3a4789d9e133cb613514173c8e"
+}

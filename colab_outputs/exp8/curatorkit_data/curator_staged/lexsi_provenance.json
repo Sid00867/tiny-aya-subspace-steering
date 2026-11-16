@@ -1,0 +1,29 @@
+{
+  "schema": "lexsi.provenance/1",
+  "library": "curatorkit",
+  "version": "0.1.21",
+  "git_sha": null,
+  "created_at": "2026-11-15T21:28:36Z",
+  "base_model": null,
+  "method": "curate",
+  "inputs": [
+    {
+      "kind": "dataset",
+      "ref": "lexsi_hackathon_artifacts/exp8_faitheval_epistemic/curatorkit_data/raw_train_input.jsonl",
+      "config": null,
+      "provenance": null
+    }
+  ],
+  "params": {
+    "generator_model": null,
+    "judge_model": null,
+    "grpo_scoring_model": null,
+    "export_formats": [
+      "dpo"
+    ],
+    "output_split": null,
+    "output_split_group": null,
+    "output_split_near_dup_threshold": 0.8,
+    "pipeline_config_hash": "f077fa5bf9cc242c"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "suite_id": "exp8_faitheval_epistemic",
+  "raw_train_count": 720,
+  "curator_passed_count": 716,
+  "curator_rejected_count": 0,
+  "cross_split_exact_leaks_removed": 0,
+  "cross_split_minhash_leaks_removed": 0,
+  "final_certified_train_count": 716,
+  "heldout_test_count": 280,
+  "post_filter_exact_leaks": 0,
+  "minhash_threshold": 0.85,
+  "curator_stage_counts": {
+    "JSONLReader": {
+      "output_count": 720,
+      "rejected_count": 0
+    },
+    "SchemaGate": {
+      "input_count": 720,
+      "output_count": 720,
+      "probe_recovered": 0,
+      "rejected_count": 0
+    },
+    "ExactDeduplicator": {
+      "input_count": 720,
+      "output_count": 719
+    },
+    "MinHashDeduplicator": {
+      "input_count": 719,
+      "output_count": 716
+    },
+    "TextCleaner": {
+      "input_count": 716,
+      "output_count": 716
+    },
+    "SecretsGate": {
+      "input_count": 716,
+      "output_count": 716,
+      "probe_recovered": 0,
+      "rejected_count": 0
+    },
+    "DPOExporter": {
+      "exported_count": 716
+    }
+  },
+  "leaked_samples_removed": [],
+  "curated_dpo_sha256": "4d81e90edf193bc50f3bb50dff274db1da3f5e3813c344797e23b6f404fb8c19"
+}

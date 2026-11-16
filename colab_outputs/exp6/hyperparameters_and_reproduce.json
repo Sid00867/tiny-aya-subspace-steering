@@ -1,0 +1,91 @@
+{
+  "suite_id": "exp6_overrefusal_compliance",
+  "seed": 42,
+  "primary_model": {
+    "model_id": "CohereLabs/tiny-aya-global",
+    "arch": "Cohere2ForCausalLM",
+    "n_layers": 36,
+    "d_model": 2048,
+    "revision": "main"
+  },
+  "regional_models": [
+    "CohereLabs/tiny-aya-fire",
+    "CohereLabs/tiny-aya-water"
+  ],
+  "window_layers": [
+    29,
+    30,
+    31,
+    32
+  ],
+  "k_star": 5,
+  "k_candidates": [
+    1,
+    3,
+    5,
+    8
+  ],
+  "alpha_grid": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+  ],
+  "semantic_gate_min": 0.9,
+  "best_operating_points": {
+    "pca_cfg": "PCA Subspace (k=5) [Win, Proj]",
+    "pca_alpha": 0.5,
+    "pca_mode": "projection",
+    "pca_l2": 4.83658042932168,
+    "sv_best_cfg": "SV Diff-of-Means [Win, Proj]",
+    "sv_best_alpha": 1.0,
+    "sv_best_mode": "projection",
+    "sv_matched_alphas": {
+      "29": 0.7920408159795669,
+      "30": 1.693220036609798,
+      "31": 3.1441376456813974,
+      "32": 1.347948799912162
+    },
+    "sv_matched_mode": "projection",
+    "sv_matched_l2": 4.949759588791774,
+    "summary_rows": {
+      "Base": {
+        "Config": "Base (Unsteered)",
+        "Mean_Delta_L2": 0.0,
+        "Semantic_Sim": 1.0,
+        "Compliance_Overall (%)": 47.67,
+        "Safe_Compliance (%)": 17.37,
+        "Harm_Refusal (%)": 100.0,
+        "XSTest_OverRefusal (%)": 72.73
+      },
+      "SV_NormMatched": {
+        "Config": "SV [Exact L2-Norm-Matched]",
+        "Mean_Delta_L2": 4.95,
+        "Semantic_Sim": 0.9525,
+        "Compliance_Overall (%)": 53.67,
+        "Safe_Compliance (%)": 26.84,
+        "Harm_Refusal (%)": 100.0,
+        "XSTest_OverRefusal (%)": 57.27
+      },
+      "PCA_Best": {
+        "Config": "PCA Subspace (k=5)",
+        "Mean_Delta_L2": 4.837,
+        "Semantic_Sim": 0.9394,
+        "Compliance_Overall (%)": 53.0,
+        "Safe_Compliance (%)": 25.79,
+        "Harm_Refusal (%)": 100.0,
+        "XSTest_OverRefusal (%)": 59.09
+      }
+    },
+    "m_base": {
+      "Compliance_Overall (%)": 47.67,
+      "Safe_Compliance (%)": 17.37,
+      "Harm_Refusal (%)": 100.0,
+      "XSTest_OverRefusal (%)": 72.73
+    }
+  }
+}

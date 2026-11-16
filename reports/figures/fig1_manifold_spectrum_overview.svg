@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" style="font-family: Segoe UI, -apple-system, Arial, sans-serif;">
+<rect x="0" y="0" width="1200" height="620" fill="#FAF8F4"/>
+<rect x="36.0" y="22.0" width="387.2" height="22" rx="11" fill="#FBECE6"/><text x="229.6" y="37.0" text-anchor="middle" font-size="11.5" font-weight="600" fill="#D97757">FIGURE 1 · CONCEPT GEOMETRY &amp; THE PUSH-SIZE ILLUSION</text><text x="36" y="70" font-size="23" font-weight="700" fill="#1D1C19" letter-spacing="-0.3">Some Behaviors Fit a Single Direction, Others Span a Subspace — Yet Geometry Alone Doesn&#x27;t Pick the Winner</text><text x="36" y="94" font-size="13.5" fill="#66625B">Left: Share of activation variance captured by 1 direction vs. 5 directions in Tiny-Aya-Global. Right: Matching push strength flips naive winners.</text>
+<rect x="36.0" y="114.0" width="640.0" height="474.0" rx="12" fill="#FFFFFF" stroke="#E4DFD5" stroke-width="1.2"/>
+<text x="58" y="142" font-size="15" font-weight="700" fill="#1D1C19">A. How Much Variance Lives in 1 Direction vs. 5 Directions?</text>
+<text x="58" y="161" font-size="12" fill="#66625B">Filled terracotta dot = 1st Direction (%)  |  Blue ring = Top 5 Directions Combined (%)</text>
+<line x1="294.0" y1="180" x2="294.0" y2="558" stroke="#ECE8DF" stroke-dasharray="3,3"/>
+<text x="294.0" y="576" text-anchor="middle" font-size="11" fill="#66625B">0%</text>
+<line x1="381.0" y1="180" x2="381.0" y2="558" stroke="#ECE8DF" stroke-dasharray="3,3"/>
+<text x="381.0" y="576" text-anchor="middle" font-size="11" fill="#66625B">25%</text>
+<line x1="468.0" y1="180" x2="468.0" y2="558" stroke="#ECE8DF" stroke-dasharray="3,3"/>
+<text x="468.0" y="576" text-anchor="middle" font-size="11" fill="#66625B">50%</text>
+<line x1="555.0" y1="180" x2="555.0" y2="558" stroke="#ECE8DF" stroke-dasharray="3,3"/>
+<text x="555.0" y="576" text-anchor="middle" font-size="11" fill="#66625B">75%</text>
+<line x1="642.0" y1="180" x2="642.0" y2="558" stroke="#ECE8DF" stroke-dasharray="3,3"/>
+<text x="642.0" y="576" text-anchor="middle" font-size="11" fill="#66625B">100%</text>
+<line x1="468.0" y1="178" x2="468.0" y2="560" stroke="#C07A28" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.65"/>
+<rect x="48" y="190" width="616" height="32" rx="6" fill="#FAF8F4" opacity="0.8"/>
+<text x="58" y="210" font-size="12" font-weight="600" fill="#1D1C19">Moralizing Persona (5 traits)</text>
+<line x1="294" y1="206" x2="632.3" y2="206" stroke="#ECE8DF" stroke-width="5" stroke-linecap="round"/>
+<line x1="625.6" y1="206" x2="632.3" y2="206" stroke="#2E6F95" stroke-width="4" opacity="0.45"/>
+<circle cx="632.3" cy="206" r="6" fill="#FFFFFF" stroke="#2E6F95" stroke-width="2.5"/>
+<circle cx="625.6" cy="206" r="6.5" fill="#D97757"/>
+<text x="615.6" y="210" text-anchor="end" font-size="10.5" font-weight="700" fill="#D97757">95.3%</text>
+<text x="642.3" y="210" text-anchor="start" font-size="10.5" font-weight="600" fill="#2E6F95">97.2%</text>
+<text x="58" y="247" font-size="12" font-weight="600" fill="#1D1C19">False Refusals (XSTest &amp; OR-Bench)</text>
+<line x1="294" y1="243" x2="611.4" y2="243" stroke="#ECE8DF" stroke-width="5" stroke-linecap="round"/>
+<line x1="589.8" y1="243" x2="611.4" y2="243" stroke="#2E6F95" stroke-width="4" opacity="0.45"/>
+<circle cx="611.4" cy="243" r="6" fill="#FFFFFF" stroke="#2E6F95" stroke-width="2.5"/>
+<circle cx="589.8" cy="243" r="6.5" fill="#D97757"/>
+<text x="579.8" y="247" text-anchor="end" font-size="10.5" font-weight="700" fill="#D97757">85.0%</text>
+<text x="621.4" y="247" text-anchor="start" font-size="10.5" font-weight="600" fill="#2E6F95">91.2%</text>
+<rect x="48" y="264" width="616" height="32" rx="6" fill="#FAF8F4" opacity="0.8"/>
+<text x="58" y="284" font-size="12" font-weight="600" fill="#1D1C19">Everyday Ethics (5 moral frameworks)</text>
+<line x1="294" y1="280" x2="603.4" y2="280" stroke="#ECE8DF" stroke-width="5" stroke-linecap="round"/>
+<line x1="554.0" y1="280" x2="603.4" y2="280" stroke="#2E6F95" stroke-width="4" opacity="0.45"/>
+<circle cx="603.4" cy="280" r="6" fill="#FFFFFF" stroke="#2E6F95" stroke-width="2.5"/>
+<circle cx="554.0" cy="280" r="6.5" fill="#D97757"/>
+<text x="544.0" y="284" text-anchor="end" font-size="10.5" font-weight="700" fill="#D97757">74.7%</text>
+<text x="613.4" y="284" text-anchor="start" font-size="10.5" font-weight="600" fill="#2E6F95">88.9%</text>
+<text x="58" y="321" font-size="12" font-weight="600" fill="#1D1C19">Instruction Hierarchy (System vs. User)</text>
+<line x1="294" y1="317" x2="615.2" y2="317" stroke="#ECE8DF" stroke-width="5" stroke-linecap="round"/>
+<line x1="538.6" y1="317" x2="615.2" y2="317" stroke="#2E6F95" stroke-width="4" opacity="0.45"/>
+<circle cx="615.2" cy="317" r="6" fill="#FFFFFF" stroke="#2E6F95" stroke-width="2.5"/>
+<circle cx="538.6" cy="317" r="6.5" fill="#D97757"/>
+<text x="528.6" y="321" text-anchor="end" font-size="10.5" font-weight="700" fill="#D97757">70.3%</text>
+<text x="625.2" y="321" text-anchor="start" font-size="10.5" font-weight="600" fill="#2E6F95">92.3%</text>
+<rect x="48" y="338" width="616" height="32" rx="6" fill="#FAF8F4" opacity="0.8"/>
+<text x="58" y="358" font-size="12" font-weight="600" fill="#1D1C19">False Refusals (Balanced Dual Split)</text>
+<line x1="294" y1="354" x2="607.5" y2="354" stroke="#ECE8DF" stroke-width="5" stroke-linecap="round"/>
+<line x1="510.8" y1="354" x2="607.5" y2="354" stroke="#2E6F95" stroke-width="4" opacity="0.45"/>
+<circle cx="607.5" cy="354" r="6" fill="#FFFFFF" stroke="#2E6F95" stroke-width="2.5"/>
+<circle cx="510.8" cy="354" r="6.5" fill="#D97757"/>
+<text x="500.8" y="358" text-anchor="end" font-size="10.5" font-weight="700" fill="#D97757">62.3%</text>
+<text x="617.5" y="358" text-anchor="start" font-size="10.5" font-weight="600" fill="#2E6F95">90.1%</text>
+<text x="58" y="395" font-size="12" font-weight="600" fill="#1D1C19">Cross-Lingual Sycophancy (4 languages)</text>
+<line x1="294" y1="391" x2="555.7" y2="391" stroke="#ECE8DF" stroke-width="5" stroke-linecap="round"/>
+<line x1="507.0" y1="391" x2="555.7" y2="391" stroke="#2E6F95" stroke-width="4" opacity="0.45"/>
+<circle cx="555.7" cy="391" r="6" fill="#FFFFFF" stroke="#2E6F95" stroke-width="2.5"/>
+<circle cx="507.0" cy="391" r="6.5" fill="#D97757"/>
+<text x="497.0" y="395" text-anchor="end" font-size="10.5" font-weight="700" fill="#D97757">61.2%</text>
+<text x="565.7" y="395" text-anchor="start" font-size="10.5" font-weight="600" fill="#2E6F95">75.2%</text>
+<rect x="48" y="412" width="616" height="32" rx="6" fill="#FAF8F4" opacity="0.8"/>
+<text x="58" y="432" font-size="12" font-weight="600" fill="#1D1C19">Political Sycophancy (Anthropic Quiz)</text>
+<line x1="294" y1="428" x2="556.4" y2="428" stroke="#ECE8DF" stroke-width="5" stroke-linecap="round"/>
+<line x1="463.8" y1="428" x2="556.4" y2="428" stroke="#2E6F95" stroke-width="4" opacity="0.45"/>
+<circle cx="556.4" cy="428" r="6" fill="#FFFFFF" stroke="#2E6F95" stroke-width="2.5"/>
+<circle cx="463.8" cy="428" r="6.5" fill="#D97757"/>
+<text x="453.8" y="432" text-anchor="end" font-size="10.5" font-weight="700" fill="#D97757">48.8%</text>
+<text x="566.4" y="432" text-anchor="start" font-size="10.5" font-weight="600" fill="#2E6F95">75.4%</text>
+<text x="58" y="469" font-size="12" font-weight="600" fill="#1D1C19">Conflicting Context &amp; TruthfulQA</text>
+<line x1="294" y1="465" x2="487.1" y2="465" stroke="#ECE8DF" stroke-width="5" stroke-linecap="round"/>
+<line x1="399.8" y1="465" x2="487.1" y2="465" stroke="#2E6F95" stroke-width="4" opacity="0.45"/>
+<circle cx="487.1" cy="465" r="6" fill="#FFFFFF" stroke="#2E6F95" stroke-width="2.5"/>
+<circle cx="399.8" cy="465" r="6.5" fill="#D97757"/>
+<text x="389.8" y="469" text-anchor="end" font-size="10.5" font-weight="700" fill="#D97757">30.4%</text>
+<text x="497.1" y="469" text-anchor="start" font-size="10.5" font-weight="600" fill="#2E6F95">55.5%</text>
+<rect x="48" y="486" width="616" height="32" rx="6" fill="#FAF8F4" opacity="0.8"/>
+<text x="58" y="506" font-size="12" font-weight="600" fill="#1D1C19">Social Stereotypes (9 BBQ categories)</text>
+<line x1="294" y1="502" x2="535.5" y2="502" stroke="#ECE8DF" stroke-width="5" stroke-linecap="round"/>
+<line x1="396.7" y1="502" x2="535.5" y2="502" stroke="#2E6F95" stroke-width="4" opacity="0.45"/>
+<circle cx="535.5" cy="502" r="6" fill="#FFFFFF" stroke="#2E6F95" stroke-width="2.5"/>
+<circle cx="396.7" cy="502" r="6.5" fill="#D97757"/>
+<text x="386.7" y="506" text-anchor="end" font-size="10.5" font-weight="700" fill="#D97757">29.5%</text>
+<text x="545.5" y="506" text-anchor="start" font-size="10.5" font-weight="600" fill="#2E6F95">69.4%</text>
+<text x="58" y="543" font-size="12" font-weight="600" fill="#1D1C19">Conflicting Context (Balanced Dual Split)</text>
+<line x1="294" y1="539" x2="491.3" y2="539" stroke="#ECE8DF" stroke-width="5" stroke-linecap="round"/>
+<line x1="396.7" y1="539" x2="491.3" y2="539" stroke="#2E6F95" stroke-width="4" opacity="0.45"/>
+<circle cx="491.3" cy="539" r="6" fill="#FFFFFF" stroke="#2E6F95" stroke-width="2.5"/>
+<circle cx="396.7" cy="539" r="6.5" fill="#D97757"/>
+<text x="386.7" y="543" text-anchor="end" font-size="10.5" font-weight="700" fill="#D97757">29.5%</text>
+<text x="501.3" y="543" text-anchor="start" font-size="10.5" font-weight="600" fill="#2E6F95">56.7%</text>
+<rect x="696.0" y="114.0" width="468.0" height="474.0" rx="12" fill="#FFFFFF" stroke="#E4DFD5" stroke-width="1.2"/>
+<text x="718" y="142" font-size="15" font-weight="700" fill="#1D1C19">B. What Happens When We Equalize Push Strength?</text>
+<text x="718" y="161" font-size="11.5" fill="#66625B">Matching how hard each method pushes activations reverses naive results.</text>
+<rect x="712" y="178" width="436" height="72" rx="8" fill="#FAF8F4" stroke="#ECE8DF"/>
+<text x="722" y="195" font-size="11.8" font-weight="700" fill="#1D1C19">Political Sycophancy (Unmatched Push Size)</text>
+<text x="722" y="213" font-size="10.5" font-weight="600" fill="#D97757">Single Vector</text>
+<rect x="854" y="204" width="113.7" height="8.5" rx="4" fill="#D97757"/>
+<text x="973.7" y="212" font-size="10.8" font-weight="700" fill="#D97757">49.0%</text>
+<text x="722" y="227" font-size="10.5" font-weight="600" fill="#2E6F95">9-Vector Subspace</text>
+<rect x="854" y="218" width="167.0" height="8.5" rx="4" fill="#2E6F95"/>
+<text x="1027.0" y="226" font-size="10.8" font-weight="700" fill="#2E6F95">72.0%</text>
+<text x="722" y="241" font-size="10.2" font-weight="600" fill="#C07A28">↳ Adding 9 vectors at once pushed activations much harder (+23 pp)</text>
+<rect x="712" y="258" width="436" height="72" rx="8" fill="#FAF8F4" stroke="#ECE8DF"/>
+<text x="722" y="275" font-size="11.8" font-weight="700" fill="#1D1C19">False Refusals · Global Model (Matched Push)</text>
+<text x="722" y="293" font-size="10.5" font-weight="600" fill="#D97757">Single Vector</text>
+<rect x="854" y="284" width="124.5" height="8.5" rx="4" fill="#D97757"/>
+<text x="984.5" y="292" font-size="10.8" font-weight="700" fill="#D97757">53.7%</text>
+<text x="722" y="307" font-size="10.5" font-weight="600" fill="#2E6F95">5D Subspace</text>
+<rect x="854" y="298" width="123.0" height="8.5" rx="4" fill="#2E6F95"/>
+<text x="983.0" y="306" font-size="10.8" font-weight="700" fill="#2E6F95">53.0%</text>
+<text x="722" y="321" font-size="10.2" font-weight="600" fill="#8A857C">↳ PCA&#x27;s apparent lead disappears once push size is equalized</text>
+<rect x="712" y="338" width="436" height="72" rx="8" fill="#FAF8F4" stroke="#ECE8DF"/>
+<text x="722" y="355" font-size="11.8" font-weight="700" fill="#1D1C19">False Refusals · Regional Fire Model (Matched)</text>
+<text x="722" y="373" font-size="10.5" font-weight="600" fill="#D97757">Single Vector</text>
+<rect x="854" y="364" width="162.4" height="8.5" rx="4" fill="#D97757"/>
+<text x="1022.4" y="372" font-size="10.8" font-weight="700" fill="#D97757">70.0%</text>
+<text x="722" y="387" font-size="10.5" font-weight="600" fill="#2E6F95">5D Subspace</text>
+<rect x="854" y="378" width="139.2" height="8.5" rx="4" fill="#2E6F95"/>
+<text x="999.2" y="386" font-size="10.8" font-weight="700" fill="#2E6F95">60.0%</text>
+<text x="722" y="401" font-size="10.2" font-weight="600" fill="#D97757">↳ Single vector beats 5D subspace by +10.0 pp at equal push</text>
+<rect x="712" y="418" width="436" height="72" rx="8" fill="#FAF8F4" stroke="#ECE8DF"/>
+<text x="722" y="435" font-size="11.8" font-weight="700" fill="#1D1C19">Instruction Hierarchy (Before Coherence Breaks)</text>
+<text x="722" y="453" font-size="10.5" font-weight="600" fill="#D97757">Single Vector</text>
+<rect x="854" y="444" width="101.9" height="8.5" rx="4" fill="#D97757"/>
+<text x="961.9" y="452" font-size="10.8" font-weight="700" fill="#D97757">43.9%</text>
+<text x="722" y="467" font-size="10.5" font-weight="600" fill="#2E6F95">5D Subspace</text>
+<rect x="854" y="458" width="76.2" height="8.5" rx="4" fill="#2E6F95"/>
+<text x="936.2" y="466" font-size="10.8" font-weight="700" fill="#2E6F95">32.9%</text>
+<text x="722" y="481" font-size="10.2" font-weight="600" fill="#D97757">↳ 5D subspace loses fluency before reaching effective push size</text>
+<rect x="712" y="498" width="436" height="72" rx="8" fill="#FAF8F4" stroke="#ECE8DF"/>
+<text x="722" y="515" font-size="11.8" font-weight="700" fill="#1D1C19">Conflicting Context &amp; TruthfulQA (Matched)</text>
+<text x="722" y="533" font-size="10.5" font-weight="600" fill="#D97757">Single Vector</text>
+<rect x="854" y="524" width="155.0" height="8.5" rx="4" fill="#D97757"/>
+<text x="1015.0" y="532" font-size="10.8" font-weight="700" fill="#D97757">66.8%</text>
+<text x="722" y="547" font-size="10.5" font-weight="600" fill="#2E6F95">5D Subspace</text>
+<rect x="854" y="538" width="135.9" height="8.5" rx="4" fill="#2E6F95"/>
+<text x="995.9" y="546" font-size="10.8" font-weight="700" fill="#2E6F95">58.6%</text>
+<text x="722" y="561" font-size="10.2" font-weight="600" fill="#D97757">↳ Single vector beats 5D subspace by +8.2 pp (statistically significant)</text>
+<text x="36" y="608" font-size="11" fill="#66625B">Measured across all 36 layers of Cohere Tiny-Aya-Global, Fire, and Water (3.35B parameters).</text>
+</svg>

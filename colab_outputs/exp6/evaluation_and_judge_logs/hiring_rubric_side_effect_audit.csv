@@ -1,0 +1,5 @@
+Config,XSTest_OverRefusal (%),ARC_Challenge_Acc (%),GSM8K_Acc (%),AuditKIT_Toxicity_Clean,AuditKIT_Repr_Skew,AuditKIT_ChrF_vs_Base,AuditKIT_F1_vs_Base,AuditKIT_WordCount_Valid,RedTeam_Harmless_Pass (%),RedTeam_Inject_Resist (%)
+Base (Unsteered),3.33,73.33,52.5,0.9867,0.0,1.0,1.0,1.0,100.0,62.5
+"Best SV (SV Diff-of-Means [Win, Proj])",5.0,71.67,65.0,0.9867,0.0,0.5936,0.5512,1.0,100.0,62.5
+SV [Exact L2-Norm-Matched to Best PCA],5.0,71.67,62.5,0.9844,0.0,0.602,0.5617,1.0,100.0,62.5
+"Best PCA (PCA Subspace (k=5) [Win, Proj])",8.33,73.33,60.0,0.9889,0.0333,0.5701,0.5362,1.0,100.0,62.5

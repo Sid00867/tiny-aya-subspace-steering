@@ -1,0 +1,714 @@
+=== Run started 2026-11-15T21:25:52.348455+00:00 | exp8_contextual_epistemic_faitheval_circuitkit.ipynb (start_cell=0) ===
+BOOTSTRAP_OK GPU: NVIDIA A100-SXM4-40GB
+
+--- [Cell 1 / Exec #1] ---
+🚀 Initializing exp8_faitheval_epistemic: Multi-Mode Contextual Epistemic Compliance (FaithEval 3-Split + TruthfulQA)
+📌 Tests PCA Subspace vs L2-Norm-Matched SV across Unanswerable, Inconsistent, Counterfactual & TruthfulQA with ARC ID collision exclusion.
+📦 Installing 9 packages: ['jaxtyping', 'fancy_einsum', 'better-abc', 'detect-secrets', 'ordered-set', 'rouge_score', 'sacrebleu', 'bert-score', 'torch-pruning>=1.0']
+📦 Installing transformer-lens==3.8.0 (required by CircuitKIT Tiny-Aya backend)...
+📥 Cloning Lexsi-Labs/CircuitKIT...
+📥 Cloning Lexsi-Labs/CuratorKIT...
+📥 Cloning Lexsi-Labs/AuditKIT...
+💾 Artifact directory ready: /content/lexsi_hackathon_artifacts/exp8_faitheval_epistemic
+✅ Imported CircuitKIT + CuratorKIT + AuditKIT successfully.
+[Cell 1 finished in 45.2s | rc=0]
+
+--- [Cell 2 / Exec #2] ---
+🔐 HF_TOKEN resolved via env:HF_TOKEN (account: @ScriptBoyDK7 — Gated Repo & Judge ready).
+🖥️ Device: cuda (NVIDIA A100-SXM4-40GB, 39.5 GB VRAM) | Dtype: torch.bfloat16 | AUTO_FWD_BS=48 | AUTO_GEN_BS=48
+⏳ Loading CohereLabs/tiny-aya-global...
+config.json:   0%|          | 0.00/1.96k [00:00<?, ?B/s]
+tokenizer_config.json:   0%|          | 0.00/8.17k [00:00<?, ?B/s]
+tokenizer.json: reconstructing file:   0%|          |  0.00B / 21.4MB          
+tokenizer.json: downloading bytes:           |  0.00B            
+special_tokens_map.json:   0%|          | 0.00/567 [00:00<?, ?B/s]
+model.safetensors.index.json:   0%|          | 0.00/23.6k [00:00<?, ?B/s]
+Downloading bytes:           |  0.00B            
+Reconstructing (incomplete total...): |          |  0.00B /  0.00B            
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]
+generation_config.json:   0%|          | 0.00/132 [00:00<?, ?B/s]
+21:27:37 • Detected architecture: cohere2 → cohere family
+21:27:37 • ✓ Validated cohere2 architecture
+   ✅ Loaded CohereLabs/tiny-aya-global | arch=Cohere2ForCausalLM (paths_ok=True) | L=36 | d=2048 | rev=main
+🎯 Default steering layer window: [15, 16, 17, 18, 19, 20, 21]
+[Cell 2 finished in 36.6s | rc=0]
+
+--- [Cell 3 / Exec #3] ---
+📥 Loading Suite 3 (exp8): FaithEval (unanswerable, inconsistent, counterfactual) + TruthfulQA...
+README.md:   0%|          | 0.00/1.49k [00:00<?, ?B/s]
+data/test-00000-of-00001.parquet: reconstructing file:   0%|          |  0.00B 
+/ 3.18MB            
+data/test-00000-of-00001.parquet: downloading bytes:           |  0.00B        
+Generating test split:   0%|          | 0/2492 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/1.45k [00:00<?, ?B/s]
+data/test-00000-of-00001.parquet: reconstructing file:   0%|          |  0.00B 
+/ 2.65MB            
+data/test-00000-of-00001.parquet: downloading bytes:           |  0.00B        
+Generating test split:   0%|          | 0/1500 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/1.60k [00:00<?, ?B/s]
+data/test-00000-of-00001.parquet: reconstructing file:   0%|          |  0.00B 
+/ 1.64MB            
+data/test-00000-of-00001.parquet: downloading bytes:           |  0.00B        
+Generating test split:   0%|          | 0/1000 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/9.59k [00:00<?, ?B/s]
+generation/validation-00000-of-00001.par(…): reconstructing file:   0%|        
+|  0.00B /  223kB            
+generation/validation-00000-of-00001.par(…): downloading bytes:           |  
+0.00B            
+Generating validation split:   0%|          | 0/817 [00:00<?, ? examples/s]
+multiple_choice/validation-00000-of-0000(…): reconstructing file:   0%|        
+|  0.00B /  271kB            
+multiple_choice/validation-00000-of-0000(…): downloading bytes:           |  
+0.00B            
+Generating validation split:   0%|          | 0/817 [00:00<?, ? examples/s]
+
+SchemaGate:   0%|          | 0/720 [00:00<?, ?sample/s]
+SchemaGate: 100%|██████████| 720/720 [00:00<00:00, 38953.87sample/s]
+
+ExactDeduplicator:   0%|          | 0/720 [00:00<?, ?sample/s]
+ExactDeduplicator: 100%|██████████| 720/720 [00:00<00:00, 49485.45sample/s]
+
+MinHashDeduplicator:   0%|          | 0/719 [00:00<?, ?sample/s]
+MinHashDeduplicator:   1%|          | 6/719 [00:00<00:12, 56.86sample/s]
+MinHashDeduplicator:   2%|▏         | 12/719 [00:00<00:12, 54.88sample/s]
+MinHashDeduplicator:   3%|▎         | 18/719 [00:00<00:14, 49.61sample/s]
+MinHashDeduplicator:   3%|▎         | 24/719 [00:00<00:16, 40.91sample/s]
+MinHashDeduplicator:   4%|▍         | 29/719 [00:00<00:17, 40.33sample/s]
+MinHashDeduplicator:   5%|▍         | 34/719 [00:00<00:17, 39.73sample/s]
+MinHashDeduplicator:   6%|▌         | 40/719 [00:00<00:16, 42.08sample/s]
+MinHashDeduplicator:   6%|▋         | 45/719 [00:01<00:16, 40.27sample/s]
+MinHashDeduplicator:   7%|▋         | 50/719 [00:01<00:16, 41.80sample/s]
+MinHashDeduplicator:   8%|▊         | 57/719 [00:01<00:14, 46.50sample/s]
+MinHashDeduplicator:   9%|▊         | 62/719 [00:01<00:15, 43.30sample/s]
+MinHashDeduplicator:   9%|▉         | 67/719 [00:01<00:14, 44.51sample/s]
+MinHashDeduplicator:  10%|█         | 72/719 [00:01<00:15, 41.52sample/s]
+MinHashDeduplicator:  11%|█         | 78/719 [00:01<00:14, 42.82sample/s]
+MinHashDeduplicator:  12%|█▏        | 83/719 [00:01<00:14, 44.55sample/s]
+MinHashDeduplicator:  12%|█▏        | 88/719 [00:02<00:15, 40.84sample/s]
+MinHashDeduplicator:  13%|█▎        | 93/719 [00:02<00:14, 42.47sample/s]
+MinHashDeduplicator:  14%|█▎        | 98/719 [00:02<00:14, 41.48sample/s]
+MinHashDeduplicator:  14%|█▍        | 103/719 [00:02<00:14, 42.97sample/s]
+MinHashDeduplicator:  15%|█▌        | 108/719 [00:02<00:15, 40.08sample/s]
+MinHashDeduplicator:  16%|█▌        | 113/719 [00:02<00:14, 40.75sample/s]
+MinHashDeduplicator:  16%|█▋        | 118/719 [00:02<00:14, 41.97sample/s]
+MinHashDeduplicator:  17%|█▋        | 124/719 [00:02<00:13, 44.15sample/s]
+MinHashDeduplicator:  18%|█▊        | 129/719 [00:02<00:13, 44.83sample/s]
+MinHashDeduplicator:  19%|█▉        | 135/719 [00:03<00:12, 45.08sample/s]
+MinHashDeduplicator:  19%|█▉        | 140/719 [00:03<00:13, 42.86sample/s]
+MinHashDeduplicator:  20%|██        | 146/719 [00:03<00:12, 46.59sample/s]
+MinHashDeduplicator:  21%|██        | 151/719 [00:03<00:13, 42.49sample/s]
+MinHashDeduplicator:  22%|██▏       | 157/719 [00:03<00:12, 46.60sample/s]
+MinHashDeduplicator:  23%|██▎       | 162/719 [00:03<00:13, 42.18sample/s]
+MinHashDeduplicator:  23%|██▎       | 167/719 [00:03<00:12, 42.53sample/s]
+MinHashDeduplicator:  24%|██▍       | 172/719 [00:03<00:13, 41.73sample/s]
+MinHashDeduplicator:  25%|██▍       | 177/719 [00:04<00:12, 43.69sample/s]
+MinHashDeduplicator:  25%|██▌       | 182/719 [00:04<00:12, 42.03sample/s]
+MinHashDeduplicator:  26%|██▌       | 188/719 [00:04<00:12, 44.00sample/s]
+MinHashDeduplicator:  27%|██▋       | 195/719 [00:04<00:10, 47.96sample/s]
+MinHashDeduplicator:  28%|██▊       | 200/719 [00:04<00:11, 46.01sample/s]
+MinHashDeduplicator:  29%|██▊       | 206/719 [00:04<00:10, 48.01sample/s]
+MinHashDeduplicator:  29%|██▉       | 211/719 [00:04<00:11, 44.27sample/s]
+MinHashDeduplicator:  30%|███       | 216/719 [00:04<00:11, 45.10sample/s]
+MinHashDeduplicator:  31%|███       | 221/719 [00:05<00:12, 40.31sample/s]
+MinHashDeduplicator:  31%|███▏      | 226/719 [00:05<00:12, 40.55sample/s]
+MinHashDeduplicator:  32%|███▏      | 231/719 [00:05<00:12, 40.61sample/s]
+MinHashDeduplicator:  33%|███▎      | 236/719 [00:05<00:11, 41.42sample/s]
+MinHashDeduplicator:  34%|███▎      | 241/719 [00:05<00:11, 40.78sample/s]
+MinHashDeduplicator:  34%|███▍      | 246/719 [00:05<00:11, 41.60sample/s]
+MinHashDeduplicator:  35%|███▍      | 251/719 [00:05<00:12, 38.62sample/s]
+MinHashDeduplicator:  35%|███▌      | 255/719 [00:05<00:12, 36.95sample/s]
+MinHashDeduplicator:  36%|███▋      | 261/719 [00:06<00:11, 40.27sample/s]
+MinHashDeduplicator:  37%|███▋      | 266/719 [00:06<00:11, 39.79sample/s]
+MinHashDeduplicator:  38%|███▊      | 273/719 [00:06<00:09, 44.89sample/s]
+MinHashDeduplicator:  39%|███▊      | 278/719 [00:06<00:10, 43.82sample/s]
+MinHashDeduplicator:  39%|███▉      | 284/719 [00:06<00:09, 44.78sample/s]
+MinHashDeduplicator:  40%|████      | 289/719 [00:06<00:10, 41.07sample/s]
+MinHashDeduplicator:  41%|████      | 294/719 [00:06<00:11, 38.63sample/s]
+MinHashDeduplicator:  42%|████▏     | 299/719 [00:07<00:10, 38.51sample/s]
+MinHashDeduplicator:  42%|████▏     | 303/719 [00:07<00:10, 38.04sample/s]
+MinHashDeduplicator:  43%|████▎     | 307/719 [00:07<00:11, 37.36sample/s]
+MinHashDeduplicator:  43%|████▎     | 311/719 [00:07<00:11, 36.83sample/s]
+MinHashDeduplicator:  44%|████▍     | 316/719 [00:07<00:10, 40.18sample/s]
+MinHashDeduplicator:  45%|████▍     | 321/719 [00:07<00:10, 38.12sample/s]
+MinHashDeduplicator:  45%|████▌     | 325/719 [00:07<00:10, 38.59sample/s]
+MinHashDeduplicator:  46%|████▌     | 330/719 [00:07<00:09, 40.97sample/s]
+MinHashDeduplicator:  47%|████▋     | 335/719 [00:07<00:08, 42.86sample/s]
+MinHashDeduplicator:  47%|████▋     | 340/719 [00:08<00:09, 41.21sample/s]
+MinHashDeduplicator:  48%|████▊     | 345/719 [00:08<00:08, 42.68sample/s]
+MinHashDeduplicator:  49%|████▊     | 350/719 [00:08<00:09, 39.60sample/s]
+MinHashDeduplicator:  49%|████▉     | 355/719 [00:08<00:09, 40.32sample/s]
+MinHashDeduplicator:  50%|█████     | 360/719 [00:08<00:08, 40.42sample/s]
+MinHashDeduplicator:  51%|█████     | 365/719 [00:08<00:09, 38.78sample/s]
+MinHashDeduplicator:  51%|█████▏    | 369/719 [00:08<00:09, 37.68sample/s]
+MinHashDeduplicator:  52%|█████▏    | 373/719 [00:08<00:09, 37.01sample/s]
+MinHashDeduplicator:  52%|█████▏    | 377/719 [00:09<00:09, 37.62sample/s]
+MinHashDeduplicator:  53%|█████▎    | 382/719 [00:09<00:08, 40.07sample/s]
+MinHashDeduplicator:  54%|█████▍    | 387/719 [00:09<00:08, 37.28sample/s]
+MinHashDeduplicator:  55%|█████▍    | 392/719 [00:09<00:08, 39.98sample/s]
+MinHashDeduplicator:  55%|█████▌    | 397/719 [00:09<00:07, 40.34sample/s]
+MinHashDeduplicator:  56%|█████▌    | 402/719 [00:09<00:08, 37.54sample/s]
+MinHashDeduplicator:  56%|█████▋    | 406/719 [00:09<00:08, 35.92sample/s]
+MinHashDeduplicator:  57%|█████▋    | 411/719 [00:09<00:08, 38.48sample/s]
+MinHashDeduplicator:  58%|█████▊    | 417/719 [00:10<00:06, 43.30sample/s]
+MinHashDeduplicator:  59%|█████▊    | 422/719 [00:10<00:07, 40.00sample/s]
+MinHashDeduplicator:  59%|█████▉    | 427/719 [00:10<00:07, 39.66sample/s]
+MinHashDeduplicator:  60%|██████    | 432/719 [00:10<00:07, 36.82sample/s]
+MinHashDeduplicator:  61%|██████    | 437/719 [00:10<00:07, 39.30sample/s]
+MinHashDeduplicator:  62%|██████▏   | 443/719 [00:10<00:06, 41.18sample/s]
+MinHashDeduplicator:  62%|██████▏   | 448/719 [00:10<00:07, 38.61sample/s]
+MinHashDeduplicator:  63%|██████▎   | 455/719 [00:10<00:05, 44.67sample/s]
+MinHashDeduplicator:  64%|██████▍   | 460/719 [00:11<00:06, 41.73sample/s]
+MinHashDeduplicator:  65%|██████▍   | 465/719 [00:11<00:05, 43.17sample/s]
+MinHashDeduplicator:  65%|██████▌   | 470/719 [00:11<00:05, 44.33sample/s]
+MinHashDeduplicator:  66%|██████▌   | 475/719 [00:11<00:05, 40.76sample/s]
+MinHashDeduplicator:  67%|██████▋   | 481/719 [00:11<00:05, 43.87sample/s]
+MinHashDeduplicator:  68%|██████▊   | 486/719 [00:11<00:05, 43.80sample/s]
+MinHashDeduplicator:  68%|██████▊   | 491/719 [00:11<00:05, 39.73sample/s]
+MinHashDeduplicator:  69%|██████▉   | 496/719 [00:11<00:05, 40.37sample/s]
+MinHashDeduplicator:  70%|██████▉   | 501/719 [00:12<00:05, 42.26sample/s]
+MinHashDeduplicator:  71%|███████   | 507/719 [00:12<00:04, 46.66sample/s]
+MinHashDeduplicator:  71%|███████   | 512/719 [00:12<00:05, 41.33sample/s]
+MinHashDeduplicator:  72%|███████▏  | 517/719 [00:12<00:04, 42.39sample/s]
+MinHashDeduplicator:  73%|███████▎  | 522/719 [00:12<00:04, 42.28sample/s]
+MinHashDeduplicator:  73%|███████▎  | 527/719 [00:12<00:04, 43.78sample/s]
+MinHashDeduplicator:  74%|███████▍  | 532/719 [00:12<00:04, 42.51sample/s]
+MinHashDeduplicator:  75%|███████▍  | 537/719 [00:12<00:04, 39.44sample/s]
+MinHashDeduplicator:  76%|███████▌  | 543/719 [00:13<00:04, 43.58sample/s]
+MinHashDeduplicator:  76%|███████▋  | 549/719 [00:13<00:03, 44.59sample/s]
+MinHashDeduplicator:  77%|███████▋  | 554/719 [00:13<00:03, 44.63sample/s]
+MinHashDeduplicator:  78%|███████▊  | 559/719 [00:13<00:03, 43.31sample/s]
+MinHashDeduplicator:  78%|███████▊  | 564/719 [00:13<00:03, 43.26sample/s]
+MinHashDeduplicator:  80%|███████▉  | 572/719 [00:13<00:02, 50.62sample/s]
+MinHashDeduplicator:  80%|████████  | 578/719 [00:13<00:03, 46.42sample/s]
+MinHashDeduplicator:  82%|████████▏ | 586/719 [00:13<00:02, 54.02sample/s]
+MinHashDeduplicator:  82%|████████▏ | 592/719 [00:14<00:02, 51.56sample/s]
+MinHashDeduplicator:  83%|████████▎ | 598/719 [00:14<00:02, 49.96sample/s]
+MinHashDeduplicator:  84%|████████▍ | 604/719 [00:14<00:02, 45.60sample/s]
+MinHashDeduplicator:  85%|████████▍ | 611/719 [00:14<00:02, 50.16sample/s]
+MinHashDeduplicator:  86%|████████▌ | 617/719 [00:14<00:01, 51.95sample/s]
+MinHashDeduplicator:  87%|████████▋ | 623/719 [00:14<00:02, 46.59sample/s]
+MinHashDeduplicator:  87%|████████▋ | 628/719 [00:14<00:02, 43.50sample/s]
+MinHashDeduplicator:  88%|████████▊ | 634/719 [00:14<00:01, 47.17sample/s]
+MinHashDeduplicator:  89%|████████▉ | 639/719 [00:15<00:01, 44.69sample/s]
+MinHashDeduplicator:  90%|████████▉ | 645/719 [00:15<00:01, 46.71sample/s]
+MinHashDeduplicator:  90%|█████████ | 650/719 [00:15<00:01, 45.39sample/s]
+MinHashDeduplicator:  91%|█████████ | 656/719 [00:15<00:01, 47.92sample/s]
+MinHashDeduplicator:  92%|█████████▏| 661/719 [00:15<00:01, 42.62sample/s]
+MinHashDeduplicator:  93%|█████████▎| 668/719 [00:15<00:01, 47.55sample/s]
+MinHashDeduplicator:  94%|█████████▎| 673/719 [00:15<00:01, 44.15sample/s]
+MinHashDeduplicator:  94%|█████████▍| 678/719 [00:15<00:00, 44.27sample/s]
+MinHashDeduplicator:  95%|█████████▍| 683/719 [00:16<00:00, 43.61sample/s]
+MinHashDeduplicator:  96%|█████████▌| 690/719 [00:16<00:00, 48.73sample/s]
+MinHashDeduplicator:  97%|█████████▋| 695/719 [00:16<00:00, 48.17sample/s]
+MinHashDeduplicator:  97%|█████████▋| 701/719 [00:16<00:00, 50.51sample/s]
+MinHashDeduplicator:  98%|█████████▊| 707/719 [00:16<00:00, 45.04sample/s]
+MinHashDeduplicator:  99%|█████████▉| 713/719 [00:16<00:00, 47.24sample/s]
+MinHashDeduplicator: 100%|█████████▉| 718/719 [00:16<00:00, 42.95sample/s]
+MinHashDeduplicator: 100%|██████████| 719/719 [00:16<00:00, 42.82sample/s]
+
+TextCleaner:   0%|          | 0/716 [00:00<?, ?sample/s]
+TextCleaner: 100%|██████████| 716/716 [00:00<00:00, 12361.42sample/s]
+
+SecretsGate:   0%|          | 0/716 [00:00<?, ?sample/s]
+SecretsGate:   1%|          | 6/716 [00:00<00:12, 55.75sample/s]
+SecretsGate:   2%|▏         | 13/716 [00:00<00:12, 57.39sample/s]
+SecretsGate:   3%|▎         | 19/716 [00:00<00:11, 58.09sample/s]
+SecretsGate:   3%|▎         | 25/716 [00:00<00:13, 52.71sample/s]
+SecretsGate:   4%|▍         | 31/716 [00:00<00:13, 50.14sample/s]
+SecretsGate:   5%|▌         | 37/716 [00:00<00:13, 51.56sample/s]
+SecretsGate:   6%|▌         | 43/716 [00:00<00:12, 52.35sample/s]
+SecretsGate:   7%|▋         | 49/716 [00:00<00:12, 52.94sample/s]
+SecretsGate:   8%|▊         | 56/716 [00:01<00:11, 57.31sample/s]
+SecretsGate:   9%|▊         | 62/716 [00:01<00:12, 51.25sample/s]
+SecretsGate:   9%|▉         | 68/716 [00:01<00:12, 52.65sample/s]
+SecretsGate:  10%|█         | 74/716 [00:01<00:12, 53.02sample/s]
+SecretsGate:  11%|█         | 80/716 [00:01<00:12, 51.71sample/s]
+SecretsGate:  12%|█▏        | 86/716 [00:01<00:12, 51.58sample/s]
+SecretsGate:  13%|█▎        | 92/716 [00:01<00:11, 52.04sample/s]
+SecretsGate:  14%|█▎        | 98/716 [00:01<00:12, 49.19sample/s]
+SecretsGate:  15%|█▍        | 104/716 [00:01<00:12, 50.47sample/s]
+SecretsGate:  15%|█▌        | 110/716 [00:02<00:11, 51.36sample/s]
+SecretsGate:  16%|█▌        | 116/716 [00:02<00:11, 50.40sample/s]
+SecretsGate:  17%|█▋        | 122/716 [00:02<00:11, 52.72sample/s]
+SecretsGate:  18%|█▊        | 128/716 [00:02<00:10, 53.77sample/s]
+SecretsGate:  19%|█▊        | 134/716 [00:02<00:10, 53.18sample/s]
+SecretsGate:  20%|█▉        | 140/716 [00:02<00:11, 50.49sample/s]
+SecretsGate:  21%|██        | 147/716 [00:02<00:10, 53.10sample/s]
+SecretsGate:  21%|██▏       | 153/716 [00:02<00:11, 50.55sample/s]
+SecretsGate:  22%|██▏       | 159/716 [00:03<00:10, 52.56sample/s]
+SecretsGate:  23%|██▎       | 165/716 [00:03<00:11, 47.12sample/s]
+SecretsGate:  24%|██▍       | 171/716 [00:03<00:11, 49.49sample/s]
+SecretsGate:  25%|██▍       | 177/716 [00:03<00:10, 50.43sample/s]
+SecretsGate:  26%|██▌       | 183/716 [00:03<00:10, 49.77sample/s]
+SecretsGate:  27%|██▋       | 191/716 [00:03<00:09, 54.46sample/s]
+SecretsGate:  28%|██▊       | 197/716 [00:03<00:09, 54.81sample/s]
+SecretsGate:  28%|██▊       | 203/716 [00:03<00:09, 53.85sample/s]
+SecretsGate:  29%|██▉       | 210/716 [00:04<00:09, 54.34sample/s]
+SecretsGate:  30%|███       | 216/716 [00:04<00:09, 53.42sample/s]
+SecretsGate:  31%|███       | 222/716 [00:04<00:10, 46.02sample/s]
+SecretsGate:  32%|███▏      | 227/716 [00:04<00:10, 46.17sample/s]
+SecretsGate:  32%|███▏      | 232/716 [00:04<00:10, 46.58sample/s]
+SecretsGate:  33%|███▎      | 238/716 [00:04<00:10, 47.26sample/s]
+SecretsGate:  34%|███▍      | 246/716 [00:04<00:08, 54.26sample/s]
+SecretsGate:  35%|███▌      | 252/716 [00:04<00:09, 50.70sample/s]
+SecretsGate:  36%|███▌      | 258/716 [00:04<00:08, 51.87sample/s]
+SecretsGate:  37%|███▋      | 264/716 [00:05<00:08, 52.11sample/s]
+SecretsGate:  38%|███▊      | 273/716 [00:05<00:07, 59.61sample/s]
+SecretsGate:  39%|███▉      | 280/716 [00:05<00:07, 60.45sample/s]
+SecretsGate:  40%|████      | 287/716 [00:05<00:07, 56.81sample/s]
+SecretsGate:  41%|████      | 293/716 [00:05<00:08, 50.11sample/s]
+SecretsGate:  42%|████▏     | 299/716 [00:05<00:08, 48.12sample/s]
+SecretsGate:  42%|████▏     | 304/716 [00:05<00:08, 46.71sample/s]
+SecretsGate:  43%|████▎     | 311/716 [00:06<00:08, 50.09sample/s]
+SecretsGate:  44%|████▍     | 317/716 [00:06<00:07, 51.47sample/s]
+SecretsGate:  45%|████▌     | 323/716 [00:06<00:08, 46.94sample/s]
+SecretsGate:  46%|████▌     | 329/716 [00:06<00:07, 48.62sample/s]
+SecretsGate:  47%|████▋     | 337/716 [00:06<00:07, 53.12sample/s]
+SecretsGate:  48%|████▊     | 343/716 [00:06<00:06, 54.08sample/s]
+SecretsGate:  49%|████▊     | 349/716 [00:06<00:06, 54.25sample/s]
+SecretsGate:  50%|████▉     | 355/716 [00:06<00:06, 52.11sample/s]
+SecretsGate:  50%|█████     | 361/716 [00:06<00:06, 53.96sample/s]
+SecretsGate:  51%|█████▏    | 367/716 [00:07<00:07, 48.56sample/s]
+SecretsGate:  52%|█████▏    | 372/716 [00:07<00:07, 47.78sample/s]
+SecretsGate:  53%|█████▎    | 377/716 [00:07<00:07, 47.42sample/s]
+SecretsGate:  53%|█████▎    | 383/716 [00:07<00:06, 49.01sample/s]
+SecretsGate:  54%|█████▍    | 388/716 [00:07<00:06, 47.35sample/s]
+SecretsGate:  55%|█████▌    | 394/716 [00:07<00:06, 49.51sample/s]
+SecretsGate:  56%|█████▌    | 399/716 [00:07<00:06, 49.16sample/s]
+SecretsGate:  56%|█████▋    | 404/716 [00:07<00:06, 45.85sample/s]
+SecretsGate:  57%|█████▋    | 409/716 [00:08<00:06, 44.83sample/s]
+SecretsGate:  58%|█████▊    | 417/716 [00:08<00:05, 53.32sample/s]
+SecretsGate:  59%|█████▉    | 423/716 [00:08<00:05, 48.84sample/s]
+SecretsGate:  60%|█████▉    | 429/716 [00:08<00:05, 48.29sample/s]
+SecretsGate:  61%|██████    | 435/716 [00:08<00:05, 51.16sample/s]
+SecretsGate:  62%|██████▏   | 441/716 [00:08<00:05, 52.55sample/s]
+SecretsGate:  62%|██████▏   | 447/716 [00:08<00:05, 47.62sample/s]
+SecretsGate:  63%|██████▎   | 454/716 [00:08<00:04, 52.87sample/s]
+SecretsGate:  64%|██████▍   | 460/716 [00:08<00:05, 50.47sample/s]
+SecretsGate:  65%|██████▌   | 466/716 [00:09<00:04, 51.21sample/s]
+SecretsGate:  66%|██████▌   | 472/716 [00:09<00:04, 52.70sample/s]
+SecretsGate:  67%|██████▋   | 478/716 [00:09<00:04, 52.76sample/s]
+SecretsGate:  68%|██████▊   | 484/716 [00:09<00:04, 49.90sample/s]
+SecretsGate:  68%|██████▊   | 490/716 [00:09<00:05, 44.84sample/s]
+SecretsGate:  69%|██████▉   | 496/716 [00:09<00:04, 48.48sample/s]
+SecretsGate:  70%|███████   | 502/716 [00:09<00:04, 50.49sample/s]
+SecretsGate:  71%|███████   | 508/716 [00:09<00:03, 52.45sample/s]
+SecretsGate:  72%|███████▏  | 514/716 [00:10<00:03, 54.03sample/s]
+SecretsGate:  73%|███████▎  | 520/716 [00:10<00:03, 52.56sample/s]
+SecretsGate:  73%|███████▎  | 526/716 [00:10<00:03, 53.05sample/s]
+SecretsGate:  74%|███████▍  | 532/716 [00:10<00:03, 49.48sample/s]
+SecretsGate:  75%|███████▌  | 538/716 [00:10<00:03, 50.40sample/s]
+SecretsGate:  76%|███████▌  | 544/716 [00:10<00:03, 52.43sample/s]
+SecretsGate:  77%|███████▋  | 550/716 [00:10<00:03, 50.12sample/s]
+SecretsGate:  78%|███████▊  | 556/716 [00:10<00:03, 51.12sample/s]
+SecretsGate:  78%|███████▊  | 562/716 [00:10<00:02, 51.61sample/s]
+SecretsGate:  80%|███████▉  | 571/716 [00:11<00:02, 59.62sample/s]
+SecretsGate:  81%|████████  | 577/716 [00:11<00:02, 59.56sample/s]
+SecretsGate:  82%|████████▏ | 585/716 [00:11<00:02, 63.31sample/s]
+SecretsGate:  83%|████████▎ | 592/716 [00:11<00:02, 58.58sample/s]
+SecretsGate:  84%|████████▍ | 600/716 [00:11<00:01, 62.38sample/s]
+SecretsGate:  85%|████████▍ | 607/716 [00:11<00:01, 60.02sample/s]
+SecretsGate:  86%|████████▌ | 615/716 [00:11<00:01, 60.81sample/s]
+SecretsGate:  87%|████████▋ | 622/716 [00:11<00:01, 54.39sample/s]
+SecretsGate:  88%|████████▊ | 628/716 [00:12<00:01, 52.73sample/s]
+SecretsGate:  89%|████████▊ | 635/716 [00:12<00:01, 54.94sample/s]
+SecretsGate:  90%|████████▉ | 642/716 [00:12<00:01, 57.59sample/s]
+SecretsGate:  91%|█████████ | 648/716 [00:12<00:01, 54.95sample/s]
+SecretsGate:  92%|█████████▏| 656/716 [00:12<00:01, 57.56sample/s]
+SecretsGate:  92%|█████████▏| 662/716 [00:12<00:00, 55.01sample/s]
+SecretsGate:  94%|█████████▎| 670/716 [00:12<00:00, 59.06sample/s]
+SecretsGate:  94%|█████████▍| 676/716 [00:12<00:00, 56.82sample/s]
+SecretsGate:  95%|█████████▌| 682/716 [00:13<00:00, 56.67sample/s]
+SecretsGate:  96%|█████████▋| 690/716 [00:13<00:00, 61.29sample/s]
+SecretsGate:  97%|█████████▋| 697/716 [00:13<00:00, 61.06sample/s]
+SecretsGate:  98%|█████████▊| 704/716 [00:13<00:00, 54.82sample/s]
+SecretsGate:  99%|█████████▉| 711/716 [00:13<00:00, 55.39sample/s]
+SecretsGate: 100%|██████████| 716/716 [00:13<00:00, 52.41sample/s]
+
+📋 CuratorKIT Summary:
+────────────────────────────────────────────
+  passed   :      716
+  rejected :        0
+  time     :    30.6s
+  output   : lexsi_hackathon_artifacts/exp8_faitheval_epistemic/curatorkit_data/curator_staged
+────────────────────────────────────────────
+🛡️ CuratorKIT + Cross-Split MinHash Leak Audit: raw=720 -> CuratorKIT=716 -> final_clean=716 (removed exact=0, minhash=0 | test=280 | post_filter_leaks=0)
+[Cell 3 finished in 62.2s | rc=0]
+
+--- [Cell 4 / Exec #4] ---
+🔬 Extracting activations across all 36 layers for 716 curated pairs (bs=48)...
+Tiny-Aya Global Train (side=0):   0%|          | 0/15 [00:00<?, ?it/s]
+Tiny-Aya Global Train (side=1):   0%|          | 0/15 [00:00<?, ?it/s]
+✅ Extracted tensor shape per layer: (716, 2048) across 4 categories / 4 modes.
+[Cell 4 finished in 40.1s | rc=0]
+
+--- [Cell 5 / Exec #5] ---
+Fitting probes & subspaces:   0%|          | 0/36 [00:00<?, ?it/s]
+🏆 Peak Multidimensional Layer L=21 -> Steering Window WINDOW_LAYERS=[19, 20, 21, 22, 23]
+| layer | auroc_dom | auroc_lr | dprime_dom | dprime_lr | evr_pc1 | evr_k5 |   
+subspace_dprime_k5                                                             
+---|---|---|---|---|---|---|---|---                                            
+19 | 19 | 0.8575 | 1.0000 | 1.7321 | 2.1026 | 0.3110 | 0.5781 | 1.7321         
+20 | 20 | 0.8588 | 1.0000 | 1.7379 | 2.1949 | 0.2965 | 0.5622 | 1.7379         
+21 | 21 | 0.8648 | 1.0000 | 1.7557 | 2.0926 | 0.2787 | 0.5430 | 1.7557         
+22 | 22 | 0.8591 | 0.9999 | 1.7050 | 2.0060 | 0.3089 | 0.5421 | 1.7050         
+23 | 23 | 0.8427 | 0.9999 | 1.6584 | 1.9260 | 0.3232 | 0.5485 | 1.6584         
+[Cell 5 finished in 22.0s | rc=0]
+
+--- [Cell 6 / Exec #6] ---
+21:29:46 • Initialized SteeringEvaluationGates
+🛡️ CircuitKIT SteeringEvaluationGates | bounds_ok=True | consistency=1.000 (ok=True)
+[Cell 6 finished in 4.8s | rc=0]
+
+--- [Cell 7 / Exec #7] ---
+💾 Saved Figure 1 -> lexsi_hackathon_artifacts/exp8_faitheval_epistemic/figures/fig1_layer_probing_and_scree.png | Window PC1 EVR=0.304 | Top-5 EVR=0.555
+[Cell 7 finished in 6.2s | rc=0]
+
+--- [Cell 8 / Exec #8] ---
+Sweep PCA Subspace (k=5) [Win, Proj]:   0%|          | 0/8 [00:00<?, ?it/s]
+Sweep PCA Uncentered SVD (k=5) [Win, Proj]:   0%|          | 0/8 [00:00<?, 
+?it/s]
+Sweep SV Diff-of-Means [Win, Proj]:   0%|          | 0/8 [00:00<?, ?it/s]
+Sweep SV Diff-of-Means [Win, Add]:   0%|          | 0/8 [00:00<?, ?it/s]
+Sweep SV CircuitKIT-LR [Win, Proj]:   0%|          | 0/8 [00:00<?, ?it/s]
+Sweep SV CircuitKIT-LR [Win, Add]:   0%|          | 0/8 [00:00<?, ?it/s]
+21:46:24 • Initialized SteeringComposer
+21:46:24 • Added steering 'SV_Matched_L19' with coefficient 1.362 (1 nodes)
+21:46:24 • Added steering 'SV_Matched_L20' with coefficient 1.077 (1 nodes)
+21:46:24 • Added steering 'SV_Matched_L21' with coefficient 0.999 (1 nodes)
+21:46:24 • Added steering 'SV_Matched_L22' with coefficient 1.064 (1 nodes)
+21:46:24 • Added steering 'SV_Matched_L23' with coefficient 1.073 (1 nodes)
+
+💾 Saved Full Alpha + L2-Norm-Matched Sweep -> lexsi_hackathon_artifacts/exp8_faitheval_epistemic/evaluation_and_judge_logs/full_alpha_sweep_results.csv
+
+🏆 Head-to-Head Summary (Unsteered Base vs Best SV vs Exact L2-Norm-Matched SV vs Best PCA):
+| Config | Mean_Delta_L2 | Semantic_Sim | Epistemic_Overall (%) |              
+Unanswerable_Acc (%) | Inconsistent_Acc (%) | Counterfactual_Acc (%) |         
+TruthfulQA_MC1 (%)                                                             
+---|---|---|---|---|---|---|---|---                                            
+0 | Base (Unsteered) | 0.0000 | 1.0000 | 62.86 | 100.0 | 55.71 | 47.14 | 48.57 
+1 | Best SV (SV Diff-of-Means [Win, Add], alpha=1.5) | 1.4997 | 0.9124 | 67.86 
+| 100.0 | 75.71 | 47.14 | 48.57                                                
+2 | SV [L2-Norm-Matched to Best PCA, Add] (rho_bar... | 1.1149 | 0.9488 | 66.79
+| 100.0 | 71.43 | 47.14 | 48.57                                                
+3 | Best PCA (PCA Uncentered SVD (k=5) [Win, Proj]... | 1.1149 | 0.9671 | 58.57
+| 100.0 | 42.86 | 44.29 | 47.14                                                
+
+🔍 AuditKIT Statistical & Collateral Regression Report:
+   Run Fingerprints | Base=93be816902c0 | SV-Matched=b80974d962d8 | PCA-Best=d3bdbd53e40d
+   PCA vs Norm-Matched SV | delta=-0.0821 (95% CI [-0.1143, -0.0500]) | p=0.000999 (sig=True)
+   RunDiff PCA vs Base        : {'newly_wrong': 14, 'newly_correct': 2, 'still_wrong': 102, 'still_correct': 162, 'unknown': 0}
+   RunDiff SV-Matched vs Base : {'newly_wrong': 0, 'newly_correct': 11, 'still_wrong': 93, 'still_correct': 176, 'unknown': 0}
+   RunDiff PCA vs SV-Matched  : {'newly_wrong': 24, 'newly_correct': 1, 'still_wrong': 92, 'still_correct': 163, 'unknown': 0}
+[Cell 8 finished in 1014.5s | rc=0]
+
+--- [Cell 9 / Exec #9] ---
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+🧑‍⚖️ HF Judge active model order: ['Qwen/Qwen2.5-72B-Instruct']
+HF Judge API:   0%|          | 0/60 [00:00<?, ?it/s]
+📏 HF LLM Judge Gold Calibration | n=60 | %Agree=98.33% | Cohen's kappa=0.9655
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Judge Alpha Curve PCA Subspace (k=5):   0%|          | 0/7 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Judge Alpha Curve SV Diff-of-Means [Proj]:   0%|          | 0/7 [00:00<?, 
+?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+HF Judge API:   0%|          | 0/75 [00:00<?, ?it/s]
+21:52:33 • Initialized SafetyDatasetSynthesis
+21:52:33 • Generated 3 adversarial prompts
+21:52:33 • Generated 3 adversarial prompts
+21:52:33 • Generated 3 adversarial prompts
+21:52:33 • Generated 3 adversarial prompts
+21:52:33 • Generated 3 adversarial prompts
+21:52:33 • Generated 3 adversarial prompts
+21:52:33 • Generated 3 adversarial prompts
+21:52:33 • Generated 3 adversarial prompts
+21:52:33 • Generated 3 adversarial prompts
+21:52:33 • Generated 3 adversarial prompts
+21:52:33 • Created safety benchmark: 10 core, 10 related, 20 adversarial
+🛡️ CircuitKIT SafetyDatasetSynthesis built 20 adversarial paraphrases.
+| Config | Alpha | Mean_Delta_L2 | Judge_Compliance (%) | Judge_Guardrail (%)  
+---|---|---|---|---|---                                                        
+0 | PCA Subspace (k=5) | 0.00 | 0.000 | 45.33 | 53.33                          
+1 | PCA Subspace (k=5) | 0.25 | 1.005 | 40.00 | 52.00                          
+2 | PCA Subspace (k=5) | 0.50 | 1.622 | 30.67 | 44.00                          
+3 | PCA Subspace (k=5) | 1.00 | 2.802 | 30.67 | 38.67                          
+4 | PCA Subspace (k=5) | 1.50 | 4.295 | 29.33 | 37.33                          
+5 | PCA Subspace (k=5) | 2.00 | 7.311 | 24.00 | 30.67                          
+6 | PCA Subspace (k=5) | 2.50 | 13.022 | 14.67 | 18.67                         
+7 | PCA Subspace (k=5) | 3.00 | 48.932 | 0.00 | 0.00                           
+8 | SV Diff-of-Means [Proj] | 0.00 | 0.000 | 45.33 | 53.33                     
+9 | SV Diff-of-Means [Proj] | 0.25 | 0.523 | 45.33 | 56.00                     
+10 | SV Diff-of-Means [Proj] | 0.50 | 0.959 | 42.67 | 49.33                    
+11 | SV Diff-of-Means [Proj] | 1.00 | 1.764 | 40.00 | 46.67                    
+12 | SV Diff-of-Means [Proj] | 1.50 | 2.657 | 38.67 | 46.67                    
+13 | SV Diff-of-Means [Proj] | 2.00 | 3.815 | 41.33 | 52.00                    
+14 | SV Diff-of-Means [Proj] | 2.50 | 8.083 | 28.00 | 36.00                    
+15 | SV Diff-of-Means [Proj] | 3.00 | 17.004 | 5.33 | 5.33                     
+16 | SV [L2-Norm-Matched to Best PCA] | 0.25 | 1.115 | 42.67 | 52.00           
+💾 Saved Figure 2 -> lexsi_hackathon_artifacts/exp8_faitheval_epistemic/figures/fig2_norm_matched_alpha_curves_and_judge.png
+[Cell 9 finished in 347.2s | rc=0]
+
+--- [Cell 10 / Exec #10] ---
+README.md:   0%|          | 0.00/1.92k [00:00<?, ?B/s]
+xstest_prompts.csv:   0%|          | 0.00/38.7k [00:00<?, ?B/s]
+Generating train split:   0%|          | 0/450 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/9.00k [00:00<?, ?B/s]
+ARC-Challenge/train-00000-of-00001.parqu(…): reconstructing file:   0%|        
+|  0.00B /  190kB            
+ARC-Challenge/train-00000-of-00001.parqu(…): downloading bytes:           |  
+0.00B            
+ARC-Challenge/test-00000-of-00001.parque(…): reconstructing file:   0%|        
+|  0.00B /  204kB            
+ARC-Challenge/test-00000-of-00001.parque(…): downloading bytes:           |  
+0.00B            
+ARC-Challenge/validation-00000-of-00001.(…): reconstructing file:   0%|        
+|  0.00B / 55.7kB            
+ARC-Challenge/validation-00000-of-00001.(…): downloading bytes:           |  
+0.00B            
+Generating train split:   0%|          | 0/1119 [00:00<?, ? examples/s]
+Generating test split:   0%|          | 0/1172 [00:00<?, ? examples/s]
+Generating validation split:   0%|          | 0/299 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/7.93k [00:00<?, ?B/s]
+main/train-00000-of-00001.parquet: reconstructing file:   0%|          |  0.00B
+/ 2.31MB            
+main/train-00000-of-00001.parquet: downloading bytes:           |  0.00B       
+main/test-00000-of-00001.parquet: reconstructing file:   0%|          |  0.00B 
+/  419kB            
+main/test-00000-of-00001.parquet: downloading bytes:           |  0.00B        
+Generating train split:   0%|          | 0/7473 [00:00<?, ? examples/s]
+Generating test split:   0%|          | 0/1319 [00:00<?, ? examples/s]
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+   ✅ Side-Effect Audit [Base (Unsteered)]: XSTest_OR=3.3% | ARC=75.0% | GSM8K=52.5% | RT_RefusalPass=100.0% | RT_InjectPass=62.5%
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+   ✅ Side-Effect Audit [Best SV (SV Diff-of-Means [Win, Add])]: XSTest_OR=5.0% | ARC=75.0% | GSM8K=45.0% | RT_RefusalPass=100.0% | RT_InjectPass=62.5%
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+   ✅ Side-Effect Audit [SV [Exact L2-Norm-Matched to Best PCA]]: XSTest_OR=3.3% | ARC=76.7% | GSM8K=45.0% | RT_RefusalPass=100.0% | RT_InjectPass=62.5%
+Generating responses:   0%|          | 0/2 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+   ✅ Side-Effect Audit [Best PCA (PCA Uncentered SVD (k=5) [Win, Proj])]: XSTest_OR=5.0% | ARC=75.0% | GSM8K=40.0% | RT_RefusalPass=100.0% | RT_InjectPass=62.5%
+💾 Saved Side-Effect & Capability Audit -> lexsi_hackathon_artifacts/exp8_faitheval_epistemic/evaluation_and_judge_logs/hiring_rubric_side_effect_audit.csv
+| Config | XSTest_OverRefusal (%) | ARC_Challenge_Acc (%) | GSM8K_Acc (%) |    
+AuditKIT_Toxicity_Clean | AuditKIT_Repr_Skew | AuditKIT_ChrF_vs_Base |         
+AuditKIT_F1_vs_Base | AuditKIT_WordCount_Valid | RedTeam_Harmless_Pass (%) |   
+RedTeam_Inject_Resist (%)                                                      
+---|---|---|---|---|---|---|---|---|---|---|---                                
+0 | Base (Unsteered) | 3.33 | 75.00 | 52.5 | 0.9867 | 0.0 | 1.0000 | 1.0000 |  
+1.0 | 100.0 | 62.5                                                             
+1 | Best SV (SV Diff-of-Means [Win, Add]) | 5.00 | 75.00 | 45.0 | 0.9867 | 0.0 
+| 0.6745 | 0.6412 | 1.0 | 100.0 | 62.5                                         
+2 | SV [Exact L2-Norm-Matched to Best PCA] | 3.33 | 76.67 | 45.0 | 0.9867 | 0.0
+| 0.7087 | 0.6870 | 1.0 | 100.0 | 62.5                                         
+3 | Best PCA (PCA Uncentered SVD (k=5) [Win, Proj]) | 5.00 | 75.00 | 40.0 |    
+0.9867 | 0.0 | 0.6118 | 0.5720 | 1.0 | 100.0 | 62.5                            
+[Cell 10 finished in 128.5s | rc=0]
+
+--- [Cell 11 / Exec #11] ---
+┌───────────────────── Traceback (most recent call last) ─────────────────────┐
+│ d:\lexsi_hackathon\.venv_colab\Lib\site-packages\colab_cli\commands\executi │
+│ on.py:235 in exec_command                                                   │
+│                                                                             │
+│   232 │   │   │   )                                                         │
+│   233 │   │   │   state.prune_session(name)                                 │
+│   234 │   │   │   raise typer.Exit(1)                                       │
+│ > 235 │   │   raise e                                                       │
+│   236 │                                                                     │
+│   237 │   try:                                                              │
+│   238 │   │   is_nb = file and file.endswith(".ipynb")                      │
+│                                                                             │
+│ d:\lexsi_hackathon\.venv_colab\Lib\site-packages\colab_cli\commands\executi │
+│ on.py:225 in exec_command                                                   │
+│                                                                             │
+│   222 │   )                                                                 │
+│   223 │   try:                                                              │
+│   224 │   │   # Ensure we are in /content which is the standard Colab       │
+│       working directory                                                     │
+│ > 225 │   │   runtime.execute_code(                                         │
+│   226 │   │   │   "import os; os.makedirs('/content', exist_ok=True);       │
+│       os.chdir('/content')"                                                 │
+│   227 │   │   )                                                             │
+│   228 │   except Exception as e:                                            │
+│                                                                             │
+│ d:\lexsi_hackathon\.venv_colab\Lib\site-packages\colab_cli\runtime.py:259   │
+│ in execute_code                                                             │
+│                                                                             │
+│   256 │   │   │   │   │   │   if idx < len(outputs):                        │
+│   257 │   │   │   │   │   │   │   output_hook(outputs[idx])                 │
+│   258 │   │   │                                                             │
+│ > 259 │   │   │   reply = self._execute_streaming(code,                     │
+│       wrapped_output_hook, timeout)                                         │
+│   260 │   │   │   reply_content = reply["content"] if reply else {"status": │
+│       "error"}                                                              │
+│   261 │   │                                                                 │
+│   262 │   │   # If there's an error status but no error in outputs,         │
+│       synthesize one                                                        │
+│                                                                             │
+│ d:\lexsi_hackathon\.venv_colab\Lib\site-packages\colab_cli\runtime.py:329   │
+│ in _execute_streaming                                                       │
+│                                                                             │
+│   326 │   │   │   │   │   return msg                                        │
+│   327 │   │                                                                 │
+│   328 │   │   while True:                                                   │
+│ > 329 │   │   │   msg = next_message(client.get_iopub_msg, "output")        │
+│   330 │   │   │   output_hook(msg)                                          │
+│   331 │   │   │   if (                                                      │
+│   332 │   │   │   │   msg["header"]["msg_type"] == "status"                 │
+│                                                                             │
+│ d:\lexsi_hackathon\.venv_colab\Lib\site-packages\colab_cli\runtime.py:305   │
+│ in next_message                                                             │
+│                                                                             │
+│   302 │   │   │   deadline = (time.monotonic() + timeout) if timeout is not │
+│       None else None                                                        │
+│   303 │   │   │   while True:                                               │
+│   304 │   │   │   │   if not client.connection_ready.is_set():              │
+│ > 305 │   │   │   │   │   raise RuntimeError("Connection was lost.")        │
+
+[runner] Websocket connection dropped; sleeping 6s and retrying (attempt 2/3)...
+🧹 Released Global model VRAM | Allocated=6.72 GB
+
+🌐 === Cycling Regional Model: CohereLabs/tiny-aya-fire ===
+⏳ Loading CohereLabs/tiny-aya-fire...
+config.json:   0%|          | 0.00/1.96k [00:00<?, ?B/s]
+tokenizer_config.json:   0%|          | 0.00/8.17k [00:00<?, ?B/s]
+special_tokens_map.json:   0%|          | 0.00/567 [00:00<?, ?B/s]
+model.safetensors.index.json:   0%|          | 0.00/23.6k [00:00<?, ?B/s]
+Downloading bytes:           |  0.00B            
+Reconstructing (incomplete total...): |          |  0.00B /  0.00B            
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]
+generation_config.json:   0%|          | 0.00/132 [00:00<?, ?B/s]
+21:55:45 • Detected architecture: cohere2 → cohere family
+21:55:45 • ✓ Validated cohere2 architecture
+   ✅ Loaded CohereLabs/tiny-aya-fire | arch=Cohere2ForCausalLM (paths_ok=True) | L=36 | d=2048 | rev=main
+tiny-aya-fire Native (side=0):   0%|          | 0/5 [00:00<?, ?it/s]
+tiny-aya-fire Native (side=1):   0%|          | 0/5 [00:00<?, ?it/s]
+Fitting probes & subspaces:   0%|          | 0/5 [00:00<?, ?it/s]
+🧹 Released tiny-aya-fire VRAM | Allocated=6.72 GB
+
+🌐 === Cycling Regional Model: CohereLabs/tiny-aya-water ===
+⏳ Loading CohereLabs/tiny-aya-water...
+config.json:   0%|          | 0.00/1.96k [00:00<?, ?B/s]
+tokenizer_config.json:   0%|          | 0.00/8.17k [00:00<?, ?B/s]
+special_tokens_map.json:   0%|          | 0.00/567 [00:00<?, ?B/s]
+model.safetensors.index.json:   0%|          | 0.00/23.6k [00:00<?, ?B/s]
+Downloading bytes:           |  0.00B            
+Reconstructing (incomplete total...): |          |  0.00B /  0.00B            
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]
+generation_config.json:   0%|          | 0.00/132 [00:00<?, ?B/s]
+21:58:20 • Detected architecture: cohere2 → cohere family
+21:58:20 • ✓ Validated cohere2 architecture
+   ✅ Loaded CohereLabs/tiny-aya-water | arch=Cohere2ForCausalLM (paths_ok=True) | L=36 | d=2048 | rev=main
+tiny-aya-water Native (side=0):   0%|          | 0/5 [00:00<?, ?it/s]
+tiny-aya-water Native (side=1):   0%|          | 0/5 [00:00<?, ?it/s]
+Fitting probes & subspaces:   0%|          | 0/5 [00:00<?, ?it/s]
+🧹 Released tiny-aya-water VRAM | Allocated=6.72 GB
+
+💾 Saved 3-Model Comparison Table -> lexsi_hackathon_artifacts/exp8_faitheval_epistemic/evaluation_and_judge_logs/multi_model_transfer_results.csv
+| Model | Config | Mean_Delta_L2 | Semantic_Sim | Epistemic_Overall (%) |      
+Unanswerable_Acc (%) | Inconsistent_Acc (%) | Counterfactual_Acc (%) |         
+TruthfulQA_MC1 (%)                                                             
+---|---|---|---|---|---|---|---|---|---                                        
+0 | tiny-aya-global | Base (Unsteered) | 0.000 | 1.0000 | 62.86 | 100.0 | 55.71
+| 47.14 | 48.57                                                                
+1 | tiny-aya-global | SV [Exact L2-Norm-Matched] | 1.115 | 0.9488 | 66.79 |    
+100.0 | 71.43 | 47.14 | 48.57                                                  
+2 | tiny-aya-global | PCA Subspace (k=5) | 1.115 | 0.9671 | 58.57 | 100.0 |    
+42.86 | 44.29 | 47.14                                                          
+3 | tiny-aya-fire | Base (Unsteered) | 0.000 | 1.0000 | 63.57 | 100.0 | 60.00 |
+47.14 | 47.14                                                                  
+4 | tiny-aya-fire | ZeroShot Transfer: Global SV -> Regional | 0.250 | 0.9971 |
+64.64 | 100.0 | 62.86 | 47.14 | 48.57                                          
+5 | tiny-aya-fire | ZeroShot Transfer: Global PCA (k=5) -> Regional | 1.214 |  
+0.9751 | 61.43 | 100.0 | 50.00 | 47.14 | 48.57                                 
+6 | tiny-aya-fire | Native SV [L2-Norm-Matched] | 1.174 | 0.9474 | 67.86 |     
+100.0 | 74.29 | 47.14 | 50.00                                                  
+7 | tiny-aya-fire | Native PCA Subspace (k=5) | 1.173 | 0.9804 | 61.79 | 100.0 
+| 51.43 | 47.14 | 48.57                                                        
+8 | tiny-aya-water | Base (Unsteered) | 0.000 | 1.0000 | 63.57 | 100.0 | 62.86 
+| 44.29 | 47.14                                                                
+9 | tiny-aya-water | ZeroShot Transfer: Global SV -> Regional | 0.250 | 0.9969 
+| 63.93 | 100.0 | 64.29 | 44.29 | 47.14                                        
+10 | tiny-aya-water | ZeroShot Transfer: Global PCA (k=5) -> Regional | 1.102 |
+0.9780 | 58.21 | 100.0 | 45.71 | 40.00 | 47.14                                 
+11 | tiny-aya-water | Native SV [L2-Norm-Matched] | 1.072 | 0.9529 | 68.57 |   
+100.0 | 80.00 | 45.71 | 48.57                                                  
+12 | tiny-aya-water | Native PCA Subspace (k=5) | 1.071 | 0.9818 | 60.00 |     
+100.0 | 48.57 | 44.29 | 47.14                                                  
+💾 Saved Figure 3 -> lexsi_hackathon_artifacts/exp8_faitheval_epistemic/figures/fig3_multi_model_and_collateral_diff.png
+[Cell 11 finished in 343.5s | rc=0]
+
+--- [Cell 12 / Exec #12] ---
+
+📦 === Google Drive Reviewer Reproducibility Bundle Saved (15.23 MB) ===
+   • curatorkit_data/curated_dpo_pairs.jsonl (759.0 KB)
+   • curatorkit_data/curator_staged/README.md (2.4 KB)
+   • curatorkit_data/curator_staged/checksums.txt (0.3 KB)
+   • curatorkit_data/curator_staged/dataset_card.md (1.9 KB)
+   • curatorkit_data/curator_staged/dpo.jsonl (701.1 KB)
+   • curatorkit_data/curator_staged/lexsi_provenance.json (0.7 KB)
+   • curatorkit_data/curator_staged/manifest.json (2.0 KB)
+   • curatorkit_data/curator_staged/rejected.jsonl (0.0 KB)
+   • curatorkit_data/curatorkit_provenance_and_leak_audit.json (1.1 KB)
+   • curatorkit_data/raw_train_input.jsonl (771.5 KB)
+   • evaluation_and_judge_logs/auditkit_regression_diff_and_ci.json (2.5 KB)
+   • evaluation_and_judge_logs/full_alpha_sweep_results.csv (5.0 KB)
+   • evaluation_and_judge_logs/hf_llm_judge_alpha_curve_logs.jsonl (636.2 KB)
+   • evaluation_and_judge_logs/hiring_rubric_side_effect_audit.csv (0.6 KB)
+   • evaluation_and_judge_logs/judge_calibration_cohens_kappa.json (0.1 KB)
+   • evaluation_and_judge_logs/multi_model_transfer_results.csv (1.2 KB)
+   • figures/fig1_layer_probing_and_scree.png (227.3 KB)
+   • figures/fig2_norm_matched_alpha_curves_and_judge.png (248.6 KB)
+   • figures/fig3_multi_model_and_collateral_diff.png (106.9 KB)
+   • hyperparameters_and_reproduce.json (2.3 KB)
+   • judge_cache/exp8_faitheval_epistemic_judge_cache.jsonl (431.5 KB)
+   • probes_and_diagnostics/circuitkit_linear_probes.pt (310.4 KB)
+   • probes_and_diagnostics/layerwise_probing_metrics.json (7.1 KB)
+   • push_to_hf_collection.py (0.5 KB)
+   • vectors_and_subspaces/tiny_aya_fire_steering_bundle.pt (244.4 KB)
+   • vectors_and_subspaces/tiny_aya_global_pca_subspace.pt (9987.1 KB)
+   • vectors_and_subspaces/tiny_aya_global_sv_vectors.pt (895.0 KB)
+   • vectors_and_subspaces/tiny_aya_water_steering_bundle.pt (244.4 KB)
+⚡ Rapid Control Config active: {'WINDOW_LAYERS': [19, 20, 21, 22, 23], 'K_STAR': 5, 'ALPHA_GRID': [0.0, 0.25, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0], 'SEMANTIC_GATE_MIN': 0.9}
+[Cell 12 finished in 5.2s | rc=0]
+TAR_READY /content/exp8_artifacts.tar.gz 11078491

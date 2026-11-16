@@ -1,0 +1,51 @@
+Config,Kind,Mode,Alpha,Mean_Delta_L2,Semantic_Sim,Gate_Valid,Epistemic_Overall (%),Unanswerable_Acc (%),Inconsistent_Acc (%),Counterfactual_Acc (%),TruthfulQA_MC1 (%)
+"PCA Subspace (k=5) [Win, Proj]",subspace,projection,0.0,0.0,1.0,True,62.86,100.0,55.71,47.14,48.57
+"PCA Subspace (k=5) [Win, Proj]",subspace,projection,0.25,1.0593,0.9762,True,57.86,100.0,42.86,41.43,47.14
+"PCA Subspace (k=5) [Win, Proj]",subspace,projection,0.5,1.7579,0.942,True,53.93,100.0,28.57,41.43,45.71
+"PCA Subspace (k=5) [Win, Proj]",subspace,projection,1.0,2.9003,0.8486,False,53.57,100.0,27.14,42.86,44.29
+"PCA Subspace (k=5) [Win, Proj]",subspace,projection,1.5,4.509,0.7981,False,54.29,100.0,28.57,42.86,45.71
+"PCA Subspace (k=5) [Win, Proj]",subspace,projection,2.0,7.8986,0.7721,False,54.29,100.0,32.86,40.0,44.29
+"PCA Subspace (k=5) [Win, Proj]",subspace,projection,2.5,19.0232,0.6351,False,46.07,74.29,37.14,28.57,44.29
+"PCA Subspace (k=5) [Win, Proj]",subspace,projection,3.0,50.1572,0.2729,False,23.57,0.0,8.57,24.29,61.43
+"PCA Uncentered SVD (k=5) [Win, Proj]",subspace,projection,0.0,0.0,1.0,True,62.86,100.0,55.71,47.14,48.57
+"PCA Uncentered SVD (k=5) [Win, Proj]",subspace,projection,0.25,1.1149,0.9671,True,58.57,100.0,42.86,44.29,47.14
+"PCA Uncentered SVD (k=5) [Win, Proj]",subspace,projection,0.5,1.833,0.9033,True,53.57,100.0,25.71,45.71,42.86
+"PCA Uncentered SVD (k=5) [Win, Proj]",subspace,projection,1.0,3.0051,0.7531,False,52.14,100.0,21.43,44.29,42.86
+"PCA Uncentered SVD (k=5) [Win, Proj]",subspace,projection,1.5,4.7656,0.7318,False,52.86,100.0,25.71,42.86,42.86
+"PCA Uncentered SVD (k=5) [Win, Proj]",subspace,projection,2.0,8.7387,0.704,False,51.07,100.0,22.86,40.0,41.43
+"PCA Uncentered SVD (k=5) [Win, Proj]",subspace,projection,2.5,21.4245,0.2483,False,50.0,97.14,30.0,30.0,42.86
+"PCA Uncentered SVD (k=5) [Win, Proj]",subspace,projection,3.0,55.8236,0.0014,False,22.5,0.0,8.57,22.86,58.57
+"SV Diff-of-Means [Win, Proj]",sv,projection,0.0,0.0,1.0,True,62.86,100.0,55.71,47.14,48.57
+"SV Diff-of-Means [Win, Proj]",sv,projection,0.25,0.4523,0.9935,True,62.5,100.0,55.71,45.71,48.57
+"SV Diff-of-Means [Win, Proj]",sv,projection,0.5,0.7726,0.9845,True,60.0,100.0,48.57,42.86,48.57
+"SV Diff-of-Means [Win, Proj]",sv,projection,1.0,1.3162,0.9377,True,57.5,100.0,37.14,42.86,50.0
+"SV Diff-of-Means [Win, Proj]",sv,projection,1.5,2.1025,0.8831,False,56.43,100.0,31.43,44.29,50.0
+"SV Diff-of-Means [Win, Proj]",sv,projection,2.0,3.4937,0.8727,False,56.43,100.0,30.0,45.71,50.0
+"SV Diff-of-Means [Win, Proj]",sv,projection,2.5,8.6563,0.7755,False,55.71,98.57,27.14,50.0,47.14
+"SV Diff-of-Means [Win, Proj]",sv,projection,3.0,23.9283,0.5012,False,29.29,0.0,15.71,45.71,55.71
+"SV Diff-of-Means [Win, Add]",sv,additive,0.0,0.0,1.0,True,62.86,100.0,55.71,47.14,48.57
+"SV Diff-of-Means [Win, Add]",sv,additive,0.25,0.25,0.9974,True,63.57,100.0,58.57,47.14,48.57
+"SV Diff-of-Means [Win, Add]",sv,additive,0.5,0.5,0.9896,True,65.0,100.0,64.29,47.14,48.57
+"SV Diff-of-Means [Win, Add]",sv,additive,1.0,0.9999,0.9619,True,66.07,100.0,68.57,47.14,48.57
+"SV Diff-of-Means [Win, Add]",sv,additive,1.5,1.4997,0.9124,True,67.86,100.0,75.71,47.14,48.57
+"SV Diff-of-Means [Win, Add]",sv,additive,2.0,1.9998,0.8451,False,69.29,100.0,80.0,47.14,50.0
+"SV Diff-of-Means [Win, Add]",sv,additive,2.5,2.5,0.7559,False,69.29,100.0,80.0,47.14,50.0
+"SV Diff-of-Means [Win, Add]",sv,additive,3.0,2.9994,0.6546,False,71.07,100.0,87.14,47.14,50.0
+"SV CircuitKIT-LR [Win, Proj]",sv,projection,0.0,0.0,1.0,True,62.86,100.0,55.71,47.14,48.57
+"SV CircuitKIT-LR [Win, Proj]",sv,projection,0.25,0.1558,0.9991,True,62.86,100.0,57.14,45.71,48.57
+"SV CircuitKIT-LR [Win, Proj]",sv,projection,0.5,0.289,0.9983,True,62.5,100.0,55.71,45.71,48.57
+"SV CircuitKIT-LR [Win, Proj]",sv,projection,1.0,0.5307,0.9968,True,62.5,100.0,57.14,44.29,48.57
+"SV CircuitKIT-LR [Win, Proj]",sv,projection,1.5,0.7845,0.9953,True,62.14,100.0,55.71,44.29,48.57
+"SV CircuitKIT-LR [Win, Proj]",sv,projection,2.0,1.11,0.9938,True,62.14,100.0,55.71,44.29,48.57
+"SV CircuitKIT-LR [Win, Proj]",sv,projection,2.5,1.6192,0.9918,True,62.14,100.0,55.71,44.29,48.57
+"SV CircuitKIT-LR [Win, Proj]",sv,projection,3.0,2.5543,0.9865,True,61.79,100.0,54.29,45.71,47.14
+"SV CircuitKIT-LR [Win, Add]",sv,additive,0.0,0.0,1.0,True,62.86,100.0,55.71,47.14,48.57
+"SV CircuitKIT-LR [Win, Add]",sv,additive,0.25,0.25,0.9995,True,62.86,100.0,55.71,47.14,48.57
+"SV CircuitKIT-LR [Win, Add]",sv,additive,0.5,0.5,0.999,True,62.86,100.0,55.71,47.14,48.57
+"SV CircuitKIT-LR [Win, Add]",sv,additive,1.0,1.0,0.9979,True,63.21,100.0,55.71,48.57,48.57
+"SV CircuitKIT-LR [Win, Add]",sv,additive,1.5,1.5,0.995,True,63.21,100.0,55.71,48.57,48.57
+"SV CircuitKIT-LR [Win, Add]",sv,additive,2.0,2.0,0.992,True,62.86,100.0,55.71,48.57,47.14
+"SV CircuitKIT-LR [Win, Add]",sv,additive,2.5,2.4998,0.9868,True,62.86,100.0,57.14,48.57,45.71
+"SV CircuitKIT-LR [Win, Add]",sv,additive,3.0,2.9999,0.982,True,62.86,100.0,58.57,47.14,45.71
+"SV [L2-Norm-Matched to Best PCA, Proj]",sv_matched,projection,0.9407,1.1957,0.9629,True,57.86,100.0,40.0,42.86,48.57
+"SV [L2-Norm-Matched to Best PCA, Add]",sv_matched,additive,1.1149,1.1149,0.9488,True,66.79,100.0,71.43,47.14,48.57

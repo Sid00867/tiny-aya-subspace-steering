@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" style="font-family: Segoe UI, -apple-system, Arial, sans-serif;">
+<rect x="0" y="0" width="1200" height="560" fill="#FAF8F4"/>
+<rect x="36.0" y="22.0" width="387.2" height="22" rx="11" fill="#FBECE6"/><text x="229.6" y="37.0" text-anchor="middle" font-size="11.5" font-weight="600" fill="#D97757">FIGURE 5 · PIPELINE ARCHITECTURE &amp; SIDE-EFFECT AUDIT</text><text x="36" y="70" font-size="23" font-weight="700" fill="#1D1C19" letter-spacing="-0.3">Our 4-Stage Audit Pipeline &amp; The Hidden Reasoning Tax on Multi-Step Math</text><text x="36" y="94" font-size="13.5" fill="#66625B">While multiple-choice science (ARC) holds steady under steering, multi-step word problems (GSM8K) often drop by 7 to 12 percentage points.</text>
+<rect x="36.0" y="114.0" width="264.0" height="82.0" rx="10" fill="#ECF6F1" stroke="#3D8B68" stroke-width="1.2"/>
+<text x="52" y="140" font-size="13.5" font-weight="700" fill="#3D8B68">1. CuratorKIT Hygiene</text>
+<text x="52" y="160" font-size="11.2" fill="#1D1C19">Deduplicates prompts &amp; removes</text>
+<text x="52" y="176" font-size="11.2" fill="#1D1C19">any train-test overlap (0 leaks)</text>
+<path d="M 304 155 L 318 155 M 313 150 L 319 155 L 313 160" fill="none" stroke="#66625B" stroke-width="2" stroke-linecap="round"/>
+<rect x="324.0" y="114.0" width="264.0" height="82.0" rx="10" fill="#FBECE6" stroke="#D97757" stroke-width="1.2"/>
+<text x="340" y="140" font-size="13.5" font-weight="700" fill="#D97757">2. CircuitKIT Steering</text>
+<text x="340" y="160" font-size="11.2" fill="#1D1C19">Extracts 36-layer vectors &amp; matches</text>
+<text x="340" y="176" font-size="11.2" fill="#1D1C19">push strength layer by layer</text>
+<path d="M 592 155 L 606 155 M 601 150 L 607 155 L 601 160" fill="none" stroke="#66625B" stroke-width="2" stroke-linecap="round"/>
+<rect x="612.0" y="114.0" width="264.0" height="82.0" rx="10" fill="#EAF3F8" stroke="#2E6F95" stroke-width="1.2"/>
+<text x="628" y="140" font-size="13.5" font-weight="700" fill="#2E6F95">3. Fluency &amp; Judge Gate</text>
+<text x="628" y="160" font-size="11.2" fill="#1D1C19">Checks output coherence (≥0.90)</text>
+<text x="628" y="176" font-size="11.2" fill="#1D1C19">+ calibrated 72B LLM judge</text>
+<path d="M 880 155 L 894 155 M 889 150 L 895 155 L 889 160" fill="none" stroke="#66625B" stroke-width="2" stroke-linecap="round"/>
+<rect x="900.0" y="114.0" width="264.0" height="82.0" rx="10" fill="#F0EDE6" stroke="#E4DFD5" stroke-width="1.2"/>
+<text x="916" y="140" font-size="13.5" font-weight="700" fill="#1D1C19">4. AuditKIT Side-Effects</text>
+<text x="916" y="160" font-size="11.2" fill="#1D1C19">Tracks flipped items + tests</text>
+<text x="916" y="176" font-size="11.2" fill="#1D1C19">GSM8K math &amp; ARC science</text>
+<rect x="36.0" y="214.0" width="1128.0" height="322.0" rx="12" fill="#FFFFFF" stroke="#E4DFD5" stroke-width="1.2"/>
+<text x="58" y="242" font-size="14.5" font-weight="700" fill="#1D1C19">Side-Effect Check: Change in Math (GSM8K) and Science (ARC) Accuracy After Steering</text>
+<text x="58" y="261" font-size="11.5" fill="#66625B">Percentage-point change relative to the unsteered model across 5 experiments.</text>
+<line x1="58" y1="399" x2="1142" y2="399" stroke="#1D1C19" stroke-width="1.2"/>
+<line x1="58" y1="459.0" x2="1142" y2="459.0" stroke="#ECE8DF" stroke-dasharray="3,3"/>
+<text x="54" y="463.0" text-anchor="end" font-size="10" fill="#66625B">-10</text>
+<line x1="58" y1="429.0" x2="1142" y2="429.0" stroke="#ECE8DF" stroke-dasharray="3,3"/>
+<text x="54" y="433.0" text-anchor="end" font-size="10" fill="#66625B">-5</text>
+<line x1="58" y1="369.0" x2="1142" y2="369.0" stroke="#ECE8DF" stroke-dasharray="3,3"/>
+<text x="54" y="373.0" text-anchor="end" font-size="10" fill="#66625B">+5</text>
+<line x1="58" y1="339.0" x2="1142" y2="339.0" stroke="#ECE8DF" stroke-dasharray="3,3"/>
+<text x="54" y="343.0" text-anchor="end" font-size="10" fill="#66625B">+10</text>
+<text x="164.4" y="292" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1D1C19">False Refusals</text>
+<text x="164.4" y="308" text-anchor="middle" font-size="10" fill="#66625B">Unsteered: Math 52.5% | Sci 73.3%</text>
+<rect x="82.0" y="324.0" width="22" height="75.0" rx="3" fill="#3D8B68"/>
+<text x="93.0" y="319.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#3D8B68">+12.5</text>
+<rect x="107.0" y="399.0" width="16" height="10.2" rx="3" fill="#2E6F95" opacity="0.78"/>
+<text x="115.0" y="420.2" text-anchor="middle" font-size="8.8" font-weight="700" fill="#2E6F95">-1.7</text>
+<text x="102.0" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Best 1D</text>
+<text x="102.0" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Erase)</text>
+<rect x="150.0" y="339.0" width="22" height="60.0" rx="3" fill="#3D8B68"/>
+<text x="161.0" y="334.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#3D8B68">+10.0</text>
+<rect x="175.0" y="399.0" width="16" height="10.2" rx="3" fill="#2E6F95" opacity="0.78"/>
+<text x="183.0" y="420.2" text-anchor="middle" font-size="8.8" font-weight="700" fill="#2E6F95">-1.7</text>
+<text x="170.0" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Equal 1D</text>
+<text x="170.0" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Erase)</text>
+<rect x="218.0" y="354.0" width="22" height="45.0" rx="3" fill="#3D8B68"/>
+<text x="229.0" y="349.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#3D8B68">+7.5</text>
+<text x="238.0" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">5D PCA</text>
+<text x="238.0" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Erase)</text>
+<text x="381.2" y="292" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1D1C19">System Hierarchy</text>
+<text x="381.2" y="308" text-anchor="middle" font-size="10" fill="#66625B">Unsteered: Math 52.5% | Sci 73.3%</text>
+<rect x="298.8" y="399.0" width="22" height="60.0" rx="3" fill="#B83B2A"/>
+<text x="309.8" y="471.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#B83B2A">-10.0</text>
+<text x="318.8" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Best 1D</text>
+<text x="318.8" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Erase)</text>
+<rect x="366.8" y="399.0" width="22" height="15.0" rx="3" fill="#B83B2A"/>
+<text x="377.8" y="426.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#B83B2A">-2.5</text>
+<rect x="391.8" y="399.0" width="16" height="10.2" rx="3" fill="#2E6F95" opacity="0.78"/>
+<text x="399.8" y="420.2" text-anchor="middle" font-size="8.8" font-weight="700" fill="#2E6F95">-1.7</text>
+<text x="386.8" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Equal 1D</text>
+<text x="386.8" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Erase)</text>
+<text x="445.8" y="394.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#3D8B68">+0.0</text>
+<rect x="459.8" y="399.0" width="16" height="19.8" rx="3" fill="#2E6F95" opacity="0.78"/>
+<text x="467.8" y="429.8" text-anchor="middle" font-size="8.8" font-weight="700" fill="#2E6F95">-3.3</text>
+<text x="454.8" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">5D PCA</text>
+<text x="454.8" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Erase)</text>
+<text x="598.0" y="292" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1D1C19">Conflicting Context</text>
+<text x="598.0" y="308" text-anchor="middle" font-size="10" fill="#66625B">Unsteered: Math 52.5% | Sci 75.0%</text>
+<rect x="515.6" y="399.0" width="22" height="45.0" rx="3" fill="#B83B2A"/>
+<text x="526.6" y="456.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#B83B2A">-7.5</text>
+<text x="535.6" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Best 1D</text>
+<text x="535.6" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Nudge)</text>
+<rect x="583.6" y="399.0" width="22" height="45.0" rx="3" fill="#B83B2A"/>
+<text x="594.6" y="456.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#B83B2A">-7.5</text>
+<rect x="608.6" y="388.8" width="16" height="10.2" rx="3" fill="#2E6F95" opacity="0.78"/>
+<text x="616.6" y="383.8" text-anchor="middle" font-size="8.8" font-weight="700" fill="#2E6F95">+1.7</text>
+<text x="603.6" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Equal 1D</text>
+<text x="603.6" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Nudge)</text>
+<rect x="651.6" y="399.0" width="22" height="75.0" rx="3" fill="#B83B2A"/>
+<text x="662.6" y="486.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#B83B2A">-12.5</text>
+<text x="671.6" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">5D SVD</text>
+<text x="671.6" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Erase)</text>
+<text x="814.8" y="292" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1D1C19">Everyday Ethics</text>
+<text x="814.8" y="308" text-anchor="middle" font-size="10" fill="#66625B">Unsteered: Math 52.5% | Sci 73.3%</text>
+<text x="743.4000000000001" y="394.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#3D8B68">+0.0</text>
+<text x="752.4000000000001" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Best 1D</text>
+<text x="752.4000000000001" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Nudge)</text>
+<rect x="800.4000000000001" y="399.0" width="22" height="45.0" rx="3" fill="#B83B2A"/>
+<text x="811.4000000000001" y="456.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#B83B2A">-7.5</text>
+<text x="820.4000000000001" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Equal 1D</text>
+<text x="820.4000000000001" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Nudge)</text>
+<rect x="868.4000000000001" y="399.0" width="22" height="15.0" rx="3" fill="#B83B2A"/>
+<text x="879.4000000000001" y="426.0" text-anchor="middle" font-size="9.5" font-weight="700" fill="#B83B2A">-2.5</text>
+<rect x="893.4000000000001" y="399.0" width="16" height="10.2" rx="3" fill="#2E6F95" opacity="0.78"/>
+<text x="901.4000000000001" y="420.2" text-anchor="middle" font-size="8.8" font-weight="700" fill="#2E6F95">-1.7</text>
+<text x="888.4000000000001" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">5D SVD</text>
+<text x="888.4000000000001" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Erase)</text>
+<text x="1031.6" y="292" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1D1C19">Factorial Suite</text>
+<text x="1031.6" y="308" text-anchor="middle" font-size="10" fill="#66625B">Unsteered: Math 54.3% | Sci 74.0%</text>
+<rect x="949.2" y="399.0" width="22" height="68.4" rx="3" fill="#B83B2A"/>
+<text x="960.2" y="479.4" text-anchor="middle" font-size="9.5" font-weight="700" fill="#B83B2A">-11.4</text>
+<text x="969.2" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Refusal 1D</text>
+<text x="969.2" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Nudge)</text>
+<rect x="1017.2" y="399.0" width="22" height="17.4" rx="3" fill="#B83B2A"/>
+<text x="1028.2" y="428.4" text-anchor="middle" font-size="9.5" font-weight="700" fill="#B83B2A">-2.9</text>
+<rect x="1042.2" y="363.0" width="16" height="36.0" rx="3" fill="#2E6F95" opacity="0.78"/>
+<text x="1050.2" y="358.0" text-anchor="middle" font-size="8.8" font-weight="700" fill="#2E6F95">+6.0</text>
+<text x="1037.2" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Context 1D</text>
+<text x="1037.2" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Nudge)</text>
+<rect x="1085.2" y="399.0" width="22" height="51.6" rx="3" fill="#B83B2A"/>
+<text x="1096.2" y="462.6" text-anchor="middle" font-size="9.5" font-weight="700" fill="#B83B2A">-8.6</text>
+<rect x="1110.2" y="375.0" width="16" height="24.0" rx="3" fill="#2E6F95" opacity="0.78"/>
+<text x="1118.2" y="370.0" text-anchor="middle" font-size="8.8" font-weight="700" fill="#2E6F95">+4.0</text>
+<text x="1105.2" y="498" text-anchor="middle" font-size="9.8" font-weight="700" fill="#1D1C19">Context 5D</text>
+<text x="1105.2" y="511" text-anchor="middle" font-size="9.3" fill="#66625B">(Erase)</text>
+<rect x="694" y="247" width="11" height="11" rx="2" fill="#3D8B68"/><rect x="708" y="247" width="11" height="11" rx="2" fill="#B83B2A"/><text x="725" y="257" font-size="10.8" font-weight="600" fill="#1D1C19">GSM8K Math Change (pp)</text>
+<rect x="899" y="247" width="9" height="11" rx="2" fill="#2E6F95"/><text x="914" y="257" font-size="10.8" font-weight="600" fill="#1D1C19">ARC Science Change (pp)</text>
+</svg>

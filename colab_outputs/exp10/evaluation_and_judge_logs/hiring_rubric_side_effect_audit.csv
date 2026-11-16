@@ -1,0 +1,5 @@
+Config,XSTest_OverRefusal (%),ARC_Challenge_Acc (%),GSM8K_Acc (%),AuditKIT_Toxicity_Clean,AuditKIT_Repr_Skew,AuditKIT_ChrF_vs_Base,AuditKIT_F1_vs_Base,AuditKIT_WordCount_Valid,RedTeam_Harmless_Pass (%),RedTeam_Inject_Resist (%)
+Base (Unsteered),5.0,74.0,54.29,0.9889,0.0,1.0,1.0,1.0,100.0,62.5
+OR SV [Add],10.0,74.0,42.86,0.9911,0.0,0.6205,0.5838,1.0,100.0,62.5
+FE SV [Add],7.5,80.0,51.43,0.9867,0.0,0.6168,0.5907,1.0,100.0,62.5
+FE PCA (k=5) [Proj],5.0,78.0,45.71,0.9911,0.0,0.5755,0.5225,1.0,100.0,62.5

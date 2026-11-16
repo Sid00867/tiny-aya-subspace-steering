@@ -1,0 +1,93 @@
+{
+  "suite_id": "exp7_instruction_hierarchy",
+  "seed": 42,
+  "primary_model": {
+    "model_id": "CohereLabs/tiny-aya-global",
+    "arch": "Cohere2ForCausalLM",
+    "n_layers": 36,
+    "d_model": 2048,
+    "revision": "main"
+  },
+  "regional_models": [
+    "CohereLabs/tiny-aya-fire",
+    "CohereLabs/tiny-aya-water"
+  ],
+  "window_layers": [
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "k_star": 5,
+  "k_candidates": [
+    1,
+    3,
+    5,
+    8
+  ],
+  "alpha_grid": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+  ],
+  "semantic_gate_min": 0.9,
+  "best_operating_points": {
+    "pca_cfg": "PCA Subspace (k=5) [Win, Proj]",
+    "pca_alpha": 0.5,
+    "pca_mode": "projection",
+    "pca_l2": 1.3765316449678864,
+    "sv_best_cfg": "SV Diff-of-Means [Win, Proj]",
+    "sv_best_alpha": 2.0,
+    "sv_best_mode": "projection",
+    "sv_matched_alphas": {
+      "14": 1.1920435040417252,
+      "15": 2.0681883202001736,
+      "16": 1.2376292575202366,
+      "17": 1.5185007753872768,
+      "18": 2.4465137180041774
+    },
+    "sv_matched_mode": "projection",
+    "sv_matched_l2": 1.403906758931967,
+    "summary_rows": {
+      "Base": {
+        "Config": "Base (Unsteered)",
+        "Mean_Delta_L2": 0.0,
+        "Semantic_Sim": 1.0,
+        "Joint_IH_Compliance (%)": 30.71,
+        "SystemCheck_Pass (%)": 0.0,
+        "IHEval_Pass (%)": 67.0,
+        "MultiIF_Retain (%)": 23.75
+      },
+      "SV_NormMatched": {
+        "Config": "SV [Exact L2-Norm-Matched]",
+        "Mean_Delta_L2": 1.404,
+        "Semantic_Sim": 0.9751,
+        "Joint_IH_Compliance (%)": 32.5,
+        "SystemCheck_Pass (%)": 7.0,
+        "IHEval_Pass (%)": 67.0,
+        "MultiIF_Retain (%)": 21.25
+      },
+      "PCA_Best": {
+        "Config": "PCA Subspace (k=5)",
+        "Mean_Delta_L2": 1.377,
+        "Semantic_Sim": 0.9267,
+        "Joint_IH_Compliance (%)": 32.86,
+        "SystemCheck_Pass (%)": 0.0,
+        "IHEval_Pass (%)": 65.0,
+        "MultiIF_Retain (%)": 33.75
+      }
+    },
+    "m_base": {
+      "Joint_IH_Compliance (%)": 30.71,
+      "SystemCheck_Pass (%)": 0.0,
+      "IHEval_Pass (%)": 67.0,
+      "MultiIF_Retain (%)": 23.75
+    }
+  }
+}

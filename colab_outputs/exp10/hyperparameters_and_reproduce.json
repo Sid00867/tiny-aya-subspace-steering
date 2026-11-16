@@ -1,0 +1,6 @@
+{
+  "suite_id": "exp10_operator_rank_decomposition",
+  "seed": 42,
+  "model": "CohereLabs/tiny-aya-global",
+  "dtype": "torch.bfloat16"
+}

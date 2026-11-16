@@ -1,0 +1,14 @@
+Model,Config,Mean_Delta_L2,Semantic_Sim,Epistemic_Overall (%),Unanswerable_Acc (%),Inconsistent_Acc (%),Counterfactual_Acc (%),TruthfulQA_MC1 (%)
+tiny-aya-global,Base (Unsteered),0.0,1.0,62.86,100.0,55.71,47.14,48.57
+tiny-aya-global,SV [Exact L2-Norm-Matched],1.115,0.9488,66.79,100.0,71.43,47.14,48.57
+tiny-aya-global,PCA Subspace (k=5),1.115,0.9671,58.57,100.0,42.86,44.29,47.14
+tiny-aya-fire,Base (Unsteered),0.0,1.0,63.57,100.0,60.0,47.14,47.14
+tiny-aya-fire,ZeroShot Transfer: Global SV -> Regional,0.25,0.9971,64.64,100.0,62.86,47.14,48.57
+tiny-aya-fire,ZeroShot Transfer: Global PCA (k=5) -> Regional,1.214,0.9751,61.43,100.0,50.0,47.14,48.57
+tiny-aya-fire,Native SV [L2-Norm-Matched],1.174,0.9474,67.86,100.0,74.29,47.14,50.0
+tiny-aya-fire,Native PCA Subspace (k=5),1.173,0.9804,61.79,100.0,51.43,47.14,48.57
+tiny-aya-water,Base (Unsteered),0.0,1.0,63.57,100.0,62.86,44.29,47.14
+tiny-aya-water,ZeroShot Transfer: Global SV -> Regional,0.25,0.9969,63.93,100.0,64.29,44.29,47.14
+tiny-aya-water,ZeroShot Transfer: Global PCA (k=5) -> Regional,1.102,0.978,58.21,100.0,45.71,40.0,47.14
+tiny-aya-water,Native SV [L2-Norm-Matched],1.072,0.9529,68.57,100.0,80.0,45.71,48.57
+tiny-aya-water,Native PCA Subspace (k=5),1.071,0.9818,60.0,100.0,48.57,44.29,47.14

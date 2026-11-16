@@ -1,0 +1,471 @@
+=== Run started 2026-11-16T04:23:24.908888+00:00 | exp10_operator_rank_decomposition_circuitkit.ipynb (start_cell=0) ===
+BOOTSTRAP_OK GPU: NVIDIA A100-SXM4-40GB
+
+--- [Cell 1 / Exec #1] ---
+🚀 Initializing exp10_operator_rank_decomposition: Operator Geometry, Supervision, and Rank (k=1..8) Factorial Decomposition
+📦 Installing 9 packages: ['jaxtyping', 'fancy_einsum', 'better-abc', 'detect-secrets', 'ordered-set', 'rouge_score', 'sacrebleu', 'bert-score', 'torch-pruning>=1.0']
+📦 Installing transformer-lens==3.8.0 (required by CircuitKIT Tiny-Aya backend)...
+📥 Cloning Lexsi-Labs/CircuitKIT...
+📥 Cloning Lexsi-Labs/CuratorKIT...
+📥 Cloning Lexsi-Labs/AuditKIT...
+💾 Artifact directory ready: /content/lexsi_hackathon_artifacts/exp10_operator_rank_decomposition
+✅ Imported CircuitKIT + CuratorKIT + AuditKIT successfully.
+[Cell 1 finished in 42.4s | rc=0]
+
+--- [Cell 2 / Exec #2] ---
+🔐 HF_TOKEN resolved via env:HF_TOKEN (account: @ScriptBoyDK7 — Gated Repo & Judge ready).
+🖥️ Device: cuda (NVIDIA A100-SXM4-40GB, 39.5 GB VRAM) | Dtype: torch.bfloat16 | AUTO_FWD_BS=48 | AUTO_GEN_BS=48
+⏳ Loading CohereLabs/tiny-aya-global...
+config.json:   0%|          | 0.00/1.96k [00:00<?, ?B/s]
+tokenizer_config.json:   0%|          | 0.00/8.17k [00:00<?, ?B/s]
+tokenizer.json: reconstructing file:   0%|          |  0.00B / 21.4MB          
+tokenizer.json: downloading bytes:           |  0.00B            
+special_tokens_map.json:   0%|          | 0.00/567 [00:00<?, ?B/s]
+model.safetensors.index.json:   0%|          | 0.00/23.6k [00:00<?, ?B/s]
+Downloading bytes:           |  0.00B            
+Reconstructing (incomplete total...): |          |  0.00B /  0.00B            
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]
+generation_config.json:   0%|          | 0.00/132 [00:00<?, ?B/s]
+04:25:36 • Detected architecture: cohere2 → cohere family
+04:25:36 • ✓ Validated cohere2 architecture
+   ✅ Loaded CohereLabs/tiny-aya-global | arch=Cohere2ForCausalLM (paths_ok=True) | L=36 | d=2048 | rev=main
+🎯 Default steering layer window: [15, 16, 17, 18, 19, 20, 21]
+[Cell 2 finished in 68.9s | rc=0]
+
+--- [Cell 3 / Exec #3] ---
+[Cell 3 finished in 6.3s | rc=0]
+
+--- [Cell 4 / Exec #4] ---
+📥 Preparing exp10 Dual-Regime Curated Datasets (OverRefusal + Epistemic FaithEval)...
+README.md:   0%|          | 0.00/6.14k [00:00<?, ?B/s]
+dataset_infos.json:   0%|          | 0.00/614 [00:00<?, ?B/s]
+train.jsonl: reconstructing file:   0%|          |  0.00B / 75.7MB            
+train.jsonl: downloading bytes:           |  0.00B            
+test.jsonl:   0%|          | 0.00/286k [00:00<?, ?B/s]
+Generating train split:   0%|          | 0/14624 [00:00<?, ? examples/s]
+Generating test split:   0%|          | 0/1187 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/7.76k [00:00<?, ?B/s]
+or-bench-80k.csv: reconstructing file:   0%|          |  0.00B / 11.1MB        
+or-bench-80k.csv: downloading bytes:           |  0.00B            
+Generating train split: 0 examples [00:00, ? examples/s]
+or-bench-hard-1k.csv: reconstructing file:   0%|          |  0.00B /  169kB    
+or-bench-hard-1k.csv: downloading bytes:           |  0.00B            
+Generating train split: 0 examples [00:00, ? examples/s]
+or-bench-toxic.csv: reconstructing file:   0%|          |  0.00B / 64.7kB      
+or-bench-toxic.csv: downloading bytes:           |  0.00B            
+Generating train split: 0 examples [00:00, ? examples/s]
+README.md:   0%|          | 0.00/6.95k [00:00<?, ?B/s]
+round0/330k/train.jsonl.xz: reconstructing file:   0%|          |  0.00B / 
+31.1MB            
+round0/330k/train.jsonl.xz: downloading bytes:           |  0.00B            
+round0/330k/test.jsonl.xz: reconstructing file:   0%|          |  0.00B / 
+2.44MB            
+round0/330k/test.jsonl.xz: downloading bytes:           |  0.00B            
+round0/30k/train.jsonl.gz: reconstructing file:   0%|          |  0.00B / 
+4.95MB            
+round0/30k/train.jsonl.gz: downloading bytes:           |  0.00B            
+round0/30k/test.jsonl.gz: reconstructing file:   0%|          |  0.00B /  545kB
+round0/30k/test.jsonl.gz: downloading bytes:           |  0.00B            
+Generating 330k_train split:   0%|          | 0/300567 [00:00<?, ? examples/s]
+Generating 330k_test split:   0%|          | 0/33396 [00:00<?, ? examples/s]
+Generating 30k_train split:   0%|          | 0/27186 [00:00<?, ? examples/s]
+Generating 30k_test split:   0%|          | 0/3021 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/1.92k [00:00<?, ?B/s]
+xstest_prompts.csv:   0%|          | 0.00/38.7k [00:00<?, ?B/s]
+Generating train split:   0%|          | 0/450 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/6.55k [00:00<?, ?B/s]
+harmful-behaviors.csv:   0%|          | 0.00/23.1k [00:00<?, ?B/s]
+benign-behaviors.csv:   0%|          | 0.00/20.6k [00:00<?, ?B/s]
+Generating harmful split:   0%|          | 0/100 [00:00<?, ? examples/s]
+Generating benign split:   0%|          | 0/100 [00:00<?, ? examples/s]
+
+SchemaGate:   0%|          | 0/360 [00:00<?, ?sample/s]
+SchemaGate: 100%|██████████| 360/360 [00:00<00:00, 99234.32sample/s]
+
+ExactDeduplicator:   0%|          | 0/360 [00:00<?, ?sample/s]
+ExactDeduplicator: 100%|██████████| 360/360 [00:00<00:00, 185543.06sample/s]
+
+MinHashDeduplicator:   0%|          | 0/360 [00:00<?, ?sample/s]
+MinHashDeduplicator:   4%|▍         | 14/360 [00:00<00:02, 132.52sample/s]
+MinHashDeduplicator:   8%|▊         | 28/360 [00:00<00:02, 129.24sample/s]
+MinHashDeduplicator:  12%|█▏        | 42/360 [00:00<00:02, 129.53sample/s]
+MinHashDeduplicator:  16%|█▌        | 56/360 [00:00<00:02, 130.56sample/s]
+MinHashDeduplicator:  19%|█▉        | 70/360 [00:00<00:02, 131.73sample/s]
+MinHashDeduplicator:  24%|██▍       | 87/360 [00:00<00:01, 140.65sample/s]
+MinHashDeduplicator:  28%|██▊       | 102/360 [00:00<00:01, 135.93sample/s]
+MinHashDeduplicator:  32%|███▏      | 116/360 [00:00<00:01, 135.99sample/s]
+MinHashDeduplicator:  36%|███▌      | 130/360 [00:00<00:01, 134.13sample/s]
+MinHashDeduplicator:  40%|████      | 144/360 [00:01<00:01, 135.40sample/s]
+MinHashDeduplicator:  44%|████▍     | 158/360 [00:01<00:01, 133.96sample/s]
+MinHashDeduplicator:  48%|████▊     | 172/360 [00:01<00:01, 134.81sample/s]
+MinHashDeduplicator:  52%|█████▏    | 186/360 [00:01<00:01, 130.47sample/s]
+MinHashDeduplicator:  56%|█████▌    | 200/360 [00:01<00:01, 123.78sample/s]
+MinHashDeduplicator:  59%|█████▉    | 213/360 [00:01<00:01, 122.70sample/s]
+MinHashDeduplicator:  63%|██████▎   | 228/360 [00:01<00:01, 128.74sample/s]
+MinHashDeduplicator:  68%|██████▊   | 243/360 [00:01<00:00, 132.63sample/s]
+MinHashDeduplicator:  72%|███████▏  | 259/360 [00:01<00:00, 138.88sample/s]
+MinHashDeduplicator:  76%|███████▌  | 274/360 [00:02<00:00, 139.45sample/s]
+MinHashDeduplicator:  80%|████████  | 289/360 [00:02<00:00, 139.71sample/s]
+MinHashDeduplicator:  84%|████████▍ | 304/360 [00:02<00:00, 136.32sample/s]
+MinHashDeduplicator:  89%|████████▊ | 319/360 [00:02<00:00, 136.48sample/s]
+MinHashDeduplicator:  92%|█████████▎| 333/360 [00:02<00:00, 134.64sample/s]
+MinHashDeduplicator:  96%|█████████▋| 347/360 [00:02<00:00, 135.96sample/s]
+MinHashDeduplicator: 100%|██████████| 360/360 [00:02<00:00, 133.73sample/s]
+
+TextCleaner:   0%|          | 0/360 [00:00<?, ?sample/s]
+TextCleaner: 100%|██████████| 360/360 [00:00<00:00, 39239.85sample/s]
+
+SecretsGate:   0%|          | 0/360 [00:00<?, ?sample/s]
+SecretsGate:   4%|▍         | 14/360 [00:00<00:02, 135.38sample/s]
+SecretsGate:   9%|▉         | 32/360 [00:00<00:02, 158.21sample/s]
+SecretsGate:  14%|█▍        | 50/360 [00:00<00:01, 166.85sample/s]
+SecretsGate:  19%|█▉        | 69/360 [00:00<00:01, 171.90sample/s]
+SecretsGate:  24%|██▍       | 88/360 [00:00<00:01, 176.80sample/s]
+SecretsGate:  29%|██▉       | 106/360 [00:00<00:01, 177.09sample/s]
+SecretsGate:  35%|███▍      | 125/360 [00:00<00:01, 178.68sample/s]
+SecretsGate:  40%|████      | 144/360 [00:00<00:01, 180.13sample/s]
+SecretsGate:  45%|████▌     | 163/360 [00:00<00:01, 179.62sample/s]
+SecretsGate:  50%|█████     | 181/360 [00:01<00:00, 179.42sample/s]
+SecretsGate:  55%|█████▌    | 199/360 [00:01<00:00, 175.01sample/s]
+SecretsGate:  60%|██████    | 217/360 [00:01<00:00, 170.98sample/s]
+SecretsGate:  66%|██████▌   | 236/360 [00:01<00:00, 174.50sample/s]
+SecretsGate:  71%|███████   | 255/360 [00:01<00:00, 176.74sample/s]
+SecretsGate:  76%|███████▌  | 274/360 [00:01<00:00, 180.13sample/s]
+SecretsGate:  81%|████████▏ | 293/360 [00:01<00:00, 181.17sample/s]
+SecretsGate:  87%|████████▋ | 312/360 [00:01<00:00, 180.44sample/s]
+SecretsGate:  92%|█████████▏| 331/360 [00:01<00:00, 179.27sample/s]
+SecretsGate:  97%|█████████▋| 350/360 [00:01<00:00, 180.64sample/s]
+SecretsGate: 100%|██████████| 360/360 [00:02<00:00, 176.14sample/s]
+
+📋 CuratorKIT Summary:
+────────────────────────────────────────────
+  passed   :      360
+  rejected :        0
+  time     :     4.8s
+  output   : lexsi_hackathon_artifacts/exp10_operator_rank_decomposition/curatorkit_data/curator_staged
+────────────────────────────────────────────
+🛡️ CuratorKIT + Cross-Split MinHash Leak Audit: raw=360 -> CuratorKIT=360 -> final_clean=360 (removed exact=0, minhash=0 | test=170 | post_filter_leaks=0)
+README.md:   0%|          | 0.00/1.49k [00:00<?, ?B/s]
+data/test-00000-of-00001.parquet: reconstructing file:   0%|          |  0.00B 
+/ 3.18MB            
+data/test-00000-of-00001.parquet: downloading bytes:           |  0.00B        
+Generating test split:   0%|          | 0/2492 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/1.45k [00:00<?, ?B/s]
+data/test-00000-of-00001.parquet: reconstructing file:   0%|          |  0.00B 
+/ 2.65MB            
+data/test-00000-of-00001.parquet: downloading bytes:           |  0.00B        
+Generating test split:   0%|          | 0/1500 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/1.60k [00:00<?, ?B/s]
+data/test-00000-of-00001.parquet: reconstructing file:   0%|          |  0.00B 
+/ 1.64MB            
+data/test-00000-of-00001.parquet: downloading bytes:           |  0.00B        
+Generating test split:   0%|          | 0/1000 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/9.59k [00:00<?, ?B/s]
+multiple_choice/validation-00000-of-0000(…): reconstructing file:   0%|        
+|  0.00B /  271kB            
+multiple_choice/validation-00000-of-0000(…): downloading bytes:           |  
+0.00B            
+Generating validation split:   0%|          | 0/817 [00:00<?, ? examples/s]
+generation/validation-00000-of-00001.par(…): reconstructing file:   0%|        
+|  0.00B /  223kB            
+generation/validation-00000-of-00001.par(…): downloading bytes:           |  
+0.00B            
+Generating validation split:   0%|          | 0/817 [00:00<?, ? examples/s]
+
+SchemaGate:   0%|          | 0/440 [00:00<?, ?sample/s]
+SchemaGate: 100%|██████████| 440/440 [00:00<00:00, 38238.27sample/s]
+
+ExactDeduplicator:   0%|          | 0/440 [00:00<?, ?sample/s]
+ExactDeduplicator: 100%|██████████| 440/440 [00:00<00:00, 48293.66sample/s]
+
+MinHashDeduplicator:   0%|          | 0/440 [00:00<?, ?sample/s]
+MinHashDeduplicator:   1%|          | 5/440 [00:00<00:09, 46.93sample/s]
+MinHashDeduplicator:   2%|▏         | 10/440 [00:00<00:10, 42.93sample/s]
+MinHashDeduplicator:   3%|▎         | 15/440 [00:00<00:10, 41.28sample/s]
+MinHashDeduplicator:   5%|▍         | 20/440 [00:00<00:09, 44.01sample/s]
+MinHashDeduplicator:   6%|▌         | 25/440 [00:00<00:10, 39.99sample/s]
+MinHashDeduplicator:   7%|▋         | 30/440 [00:00<00:10, 39.17sample/s]
+MinHashDeduplicator:   8%|▊         | 35/440 [00:00<00:10, 39.58sample/s]
+MinHashDeduplicator:   9%|▉         | 41/440 [00:00<00:09, 43.83sample/s]
+MinHashDeduplicator:  10%|█         | 46/440 [00:01<00:08, 44.48sample/s]
+MinHashDeduplicator:  12%|█▏        | 51/440 [00:01<00:09, 42.75sample/s]
+MinHashDeduplicator:  13%|█▎        | 56/440 [00:01<00:09, 42.54sample/s]
+MinHashDeduplicator:  14%|█▍        | 61/440 [00:01<00:08, 42.60sample/s]
+MinHashDeduplicator:  15%|█▌        | 66/440 [00:01<00:08, 44.39sample/s]
+MinHashDeduplicator:  17%|█▋        | 73/440 [00:01<00:07, 48.61sample/s]
+MinHashDeduplicator:  18%|█▊        | 78/440 [00:01<00:07, 46.50sample/s]
+MinHashDeduplicator:  19%|█▉        | 83/440 [00:01<00:07, 47.33sample/s]
+MinHashDeduplicator:  20%|██        | 88/440 [00:02<00:08, 43.40sample/s]
+MinHashDeduplicator:  21%|██        | 93/440 [00:02<00:08, 40.06sample/s]
+MinHashDeduplicator:  22%|██▏       | 98/440 [00:02<00:08, 41.90sample/s]
+MinHashDeduplicator:  23%|██▎       | 103/440 [00:02<00:08, 40.95sample/s]
+MinHashDeduplicator:  25%|██▍       | 108/440 [00:02<00:08, 41.03sample/s]
+MinHashDeduplicator:  26%|██▌       | 113/440 [00:02<00:07, 43.14sample/s]
+MinHashDeduplicator:  27%|██▋       | 118/440 [00:02<00:07, 42.23sample/s]
+MinHashDeduplicator:  28%|██▊       | 123/440 [00:02<00:07, 39.80sample/s]
+MinHashDeduplicator:  29%|██▉       | 128/440 [00:03<00:08, 36.89sample/s]
+MinHashDeduplicator:  30%|███       | 132/440 [00:03<00:08, 36.68sample/s]
+MinHashDeduplicator:  31%|███       | 137/440 [00:03<00:08, 37.68sample/s]
+MinHashDeduplicator:  32%|███▎      | 143/440 [00:03<00:07, 41.27sample/s]
+MinHashDeduplicator:  34%|███▎      | 148/440 [00:03<00:07, 41.69sample/s]
+MinHashDeduplicator:  35%|███▍      | 153/440 [00:03<00:07, 40.30sample/s]
+MinHashDeduplicator:  36%|███▋      | 160/440 [00:03<00:06, 46.09sample/s]
+MinHashDeduplicator:  38%|███▊      | 165/440 [00:03<00:06, 42.39sample/s]
+MinHashDeduplicator:  39%|███▉      | 172/440 [00:04<00:05, 45.62sample/s]
+MinHashDeduplicator:  40%|████      | 177/440 [00:04<00:06, 42.80sample/s]
+MinHashDeduplicator:  41%|████▏     | 182/440 [00:04<00:06, 41.82sample/s]
+MinHashDeduplicator:  42%|████▎     | 187/440 [00:04<00:05, 42.40sample/s]
+MinHashDeduplicator:  44%|████▎     | 192/440 [00:04<00:05, 41.46sample/s]
+MinHashDeduplicator:  45%|████▍     | 197/440 [00:04<00:06, 38.72sample/s]
+MinHashDeduplicator:  46%|████▌     | 201/440 [00:04<00:06, 36.61sample/s]
+MinHashDeduplicator:  47%|████▋     | 205/440 [00:04<00:06, 34.58sample/s]
+MinHashDeduplicator:  48%|████▊     | 209/440 [00:05<00:06, 34.74sample/s]
+MinHashDeduplicator:  48%|████▊     | 213/440 [00:05<00:06, 35.89sample/s]
+MinHashDeduplicator:  50%|████▉     | 218/440 [00:05<00:05, 39.55sample/s]
+MinHashDeduplicator:  51%|█████     | 223/440 [00:05<00:05, 36.29sample/s]
+MinHashDeduplicator:  52%|█████▏    | 228/440 [00:05<00:05, 39.12sample/s]
+MinHashDeduplicator:  53%|█████▎    | 233/440 [00:05<00:05, 40.64sample/s]
+MinHashDeduplicator:  54%|█████▍    | 238/440 [00:05<00:04, 42.69sample/s]
+MinHashDeduplicator:  56%|█████▌    | 245/440 [00:05<00:03, 49.47sample/s]
+MinHashDeduplicator:  57%|█████▋    | 251/440 [00:06<00:04, 45.26sample/s]
+MinHashDeduplicator:  58%|█████▊    | 256/440 [00:06<00:04, 43.21sample/s]
+MinHashDeduplicator:  60%|█████▉    | 262/440 [00:06<00:04, 44.47sample/s]
+MinHashDeduplicator:  61%|██████    | 267/440 [00:06<00:04, 41.28sample/s]
+MinHashDeduplicator:  62%|██████▏   | 272/440 [00:06<00:04, 38.64sample/s]
+MinHashDeduplicator:  63%|██████▎   | 277/440 [00:06<00:03, 41.21sample/s]
+MinHashDeduplicator:  64%|██████▍   | 282/440 [00:06<00:04, 39.05sample/s]
+MinHashDeduplicator:  65%|██████▌   | 287/440 [00:06<00:03, 40.85sample/s]
+MinHashDeduplicator:  67%|██████▋   | 294/440 [00:07<00:03, 46.13sample/s]
+MinHashDeduplicator:  68%|██████▊   | 299/440 [00:07<00:03, 41.60sample/s]
+MinHashDeduplicator:  69%|██████▉   | 305/440 [00:07<00:03, 43.32sample/s]
+MinHashDeduplicator:  70%|███████   | 310/440 [00:07<00:03, 41.08sample/s]
+MinHashDeduplicator:  72%|███████▏  | 315/440 [00:07<00:03, 40.44sample/s]
+MinHashDeduplicator:  73%|███████▎  | 320/440 [00:07<00:02, 42.35sample/s]
+MinHashDeduplicator:  74%|███████▍  | 325/440 [00:07<00:02, 42.86sample/s]
+MinHashDeduplicator:  75%|███████▌  | 330/440 [00:07<00:02, 42.60sample/s]
+MinHashDeduplicator:  76%|███████▌  | 335/440 [00:08<00:02, 43.72sample/s]
+MinHashDeduplicator:  77%|███████▋  | 340/440 [00:08<00:02, 45.35sample/s]
+MinHashDeduplicator:  79%|███████▊  | 346/440 [00:08<00:02, 46.65sample/s]
+MinHashDeduplicator:  80%|███████▉  | 351/440 [00:08<00:01, 46.66sample/s]
+MinHashDeduplicator:  81%|████████  | 356/440 [00:08<00:01, 46.40sample/s]
+MinHashDeduplicator:  82%|████████▏ | 361/440 [00:08<00:01, 41.93sample/s]
+MinHashDeduplicator:  84%|████████▎ | 368/440 [00:08<00:01, 48.69sample/s]
+MinHashDeduplicator:  85%|████████▌ | 374/440 [00:08<00:01, 47.03sample/s]
+MinHashDeduplicator:  86%|████████▌ | 379/440 [00:09<00:01, 42.30sample/s]
+MinHashDeduplicator:  87%|████████▋ | 384/440 [00:09<00:01, 39.59sample/s]
+MinHashDeduplicator:  88%|████████▊ | 389/440 [00:09<00:01, 40.17sample/s]
+MinHashDeduplicator:  90%|████████▉ | 394/440 [00:09<00:01, 41.92sample/s]
+MinHashDeduplicator:  91%|█████████ | 400/440 [00:09<00:00, 43.37sample/s]
+MinHashDeduplicator:  92%|█████████▎| 407/440 [00:09<00:00, 46.69sample/s]
+MinHashDeduplicator:  94%|█████████▍| 413/440 [00:09<00:00, 49.47sample/s]
+MinHashDeduplicator:  95%|█████████▌| 419/440 [00:09<00:00, 45.54sample/s]
+MinHashDeduplicator:  96%|█████████▋| 424/440 [00:10<00:00, 41.64sample/s]
+MinHashDeduplicator:  98%|█████████▊| 429/440 [00:10<00:00, 40.66sample/s]
+MinHashDeduplicator:  99%|█████████▊| 434/440 [00:10<00:00, 42.50sample/s]
+MinHashDeduplicator: 100%|█████████▉| 439/440 [00:10<00:00, 42.10sample/s]
+MinHashDeduplicator: 100%|██████████| 440/440 [00:10<00:00, 42.12sample/s]
+
+TextCleaner:   0%|          | 0/440 [00:00<?, ?sample/s]
+TextCleaner: 100%|██████████| 440/440 [00:00<00:00, 12554.81sample/s]
+
+SecretsGate:   0%|          | 0/440 [00:00<?, ?sample/s]
+SecretsGate:   1%|▏         | 6/440 [00:00<00:08, 51.35sample/s]
+SecretsGate:   3%|▎         | 13/440 [00:00<00:07, 60.47sample/s]
+SecretsGate:   5%|▍         | 20/440 [00:00<00:07, 56.93sample/s]
+SecretsGate:   6%|▌         | 26/440 [00:00<00:08, 50.87sample/s]
+SecretsGate:   7%|▋         | 32/440 [00:00<00:08, 47.84sample/s]
+SecretsGate:   9%|▉         | 40/440 [00:00<00:07, 54.97sample/s]
+SecretsGate:  10%|█         | 46/440 [00:00<00:07, 55.45sample/s]
+SecretsGate:  12%|█▏        | 52/440 [00:00<00:07, 51.24sample/s]
+SecretsGate:  13%|█▎        | 58/440 [00:01<00:07, 52.66sample/s]
+SecretsGate:  15%|█▍        | 64/440 [00:01<00:07, 53.65sample/s]
+SecretsGate:  16%|█▌        | 70/440 [00:01<00:06, 54.76sample/s]
+SecretsGate:  18%|█▊        | 77/440 [00:01<00:06, 58.06sample/s]
+SecretsGate:  19%|█▉        | 83/440 [00:01<00:06, 57.84sample/s]
+SecretsGate:  20%|██        | 89/440 [00:01<00:06, 52.79sample/s]
+SecretsGate:  22%|██▏       | 95/440 [00:01<00:07, 49.07sample/s]
+SecretsGate:  23%|██▎       | 101/440 [00:01<00:06, 51.09sample/s]
+SecretsGate:  25%|██▍       | 108/440 [00:02<00:05, 56.00sample/s]
+SecretsGate:  26%|██▌       | 115/440 [00:02<00:05, 56.79sample/s]
+SecretsGate:  28%|██▊       | 121/440 [00:02<00:05, 56.08sample/s]
+SecretsGate:  29%|██▉       | 127/440 [00:02<00:06, 50.82sample/s]
+SecretsGate:  30%|███       | 133/440 [00:02<00:06, 47.92sample/s]
+SecretsGate:  31%|███▏      | 138/440 [00:02<00:06, 47.78sample/s]
+SecretsGate:  33%|███▎      | 145/440 [00:02<00:05, 52.88sample/s]
+SecretsGate:  34%|███▍      | 151/440 [00:02<00:05, 51.26sample/s]
+SecretsGate:  36%|███▌      | 157/440 [00:02<00:05, 53.14sample/s]
+SecretsGate:  37%|███▋      | 163/440 [00:03<00:05, 54.29sample/s]
+SecretsGate:  38%|███▊      | 169/440 [00:03<00:05, 53.48sample/s]
+SecretsGate:  40%|████      | 176/440 [00:03<00:04, 54.29sample/s]
+SecretsGate:  41%|████▏     | 182/440 [00:03<00:05, 50.79sample/s]
+SecretsGate:  43%|████▎     | 188/440 [00:03<00:04, 52.97sample/s]
+SecretsGate:  44%|████▍     | 194/440 [00:03<00:05, 48.58sample/s]
+SecretsGate:  45%|████▌     | 199/440 [00:03<00:05, 46.72sample/s]
+SecretsGate:  46%|████▋     | 204/440 [00:03<00:05, 43.12sample/s]
+SecretsGate:  48%|████▊     | 209/440 [00:04<00:05, 43.13sample/s]
+SecretsGate:  49%|████▊     | 214/440 [00:04<00:05, 43.77sample/s]
+SecretsGate:  50%|█████     | 220/440 [00:04<00:04, 46.40sample/s]
+SecretsGate:  51%|█████     | 225/440 [00:04<00:04, 47.13sample/s]
+SecretsGate:  52%|█████▎    | 231/440 [00:04<00:04, 49.28sample/s]
+SecretsGate:  54%|█████▍    | 238/440 [00:04<00:03, 52.93sample/s]
+SecretsGate:  56%|█████▌    | 247/440 [00:04<00:03, 60.81sample/s]
+SecretsGate:  58%|█████▊    | 254/440 [00:04<00:03, 53.70sample/s]
+SecretsGate:  59%|█████▉    | 260/440 [00:05<00:03, 53.16sample/s]
+SecretsGate:  60%|██████    | 266/440 [00:05<00:03, 50.88sample/s]
+SecretsGate:  62%|██████▏   | 272/440 [00:05<00:03, 46.69sample/s]
+SecretsGate:  63%|██████▎   | 279/440 [00:05<00:03, 51.69sample/s]
+SecretsGate:  65%|██████▍   | 285/440 [00:05<00:03, 50.93sample/s]
+SecretsGate:  67%|██████▋   | 293/440 [00:05<00:02, 56.97sample/s]
+SecretsGate:  68%|██████▊   | 299/440 [00:05<00:02, 52.03sample/s]
+SecretsGate:  69%|██████▉   | 305/440 [00:05<00:02, 53.29sample/s]
+SecretsGate:  71%|███████   | 311/440 [00:06<00:02, 52.07sample/s]
+SecretsGate:  72%|███████▏  | 317/440 [00:06<00:02, 48.21sample/s]
+SecretsGate:  74%|███████▎  | 324/440 [00:06<00:02, 52.92sample/s]
+SecretsGate:  75%|███████▌  | 330/440 [00:06<00:02, 52.07sample/s]
+SecretsGate:  77%|███████▋  | 337/440 [00:06<00:01, 53.17sample/s]
+SecretsGate:  78%|███████▊  | 343/440 [00:06<00:01, 54.27sample/s]
+SecretsGate:  80%|███████▉  | 350/440 [00:06<00:01, 57.63sample/s]
+SecretsGate:  81%|████████  | 356/440 [00:06<00:01, 57.78sample/s]
+SecretsGate:  82%|████████▏ | 362/440 [00:06<00:01, 52.91sample/s]
+SecretsGate:  84%|████████▍ | 370/440 [00:07<00:01, 57.99sample/s]
+SecretsGate:  85%|████████▌ | 376/440 [00:07<00:01, 51.98sample/s]
+SecretsGate:  87%|████████▋ | 382/440 [00:07<00:01, 47.95sample/s]
+SecretsGate:  88%|████████▊ | 387/440 [00:07<00:01, 47.58sample/s]
+SecretsGate:  89%|████████▉ | 392/440 [00:07<00:01, 44.99sample/s]
+SecretsGate:  91%|█████████ | 400/440 [00:07<00:00, 52.77sample/s]
+SecretsGate:  92%|█████████▎| 407/440 [00:07<00:00, 56.32sample/s]
+SecretsGate:  94%|█████████▍| 415/440 [00:07<00:00, 61.67sample/s]
+SecretsGate:  96%|█████████▌| 422/440 [00:08<00:00, 53.18sample/s]
+SecretsGate:  97%|█████████▋| 428/440 [00:08<00:00, 47.58sample/s]
+SecretsGate:  99%|█████████▊| 434/440 [00:08<00:00, 50.38sample/s]
+SecretsGate: 100%|██████████| 440/440 [00:08<00:00, 52.21sample/s]
+SecretsGate: 100%|██████████| 440/440 [00:08<00:00, 52.00sample/s]
+
+📋 CuratorKIT Summary:
+────────────────────────────────────────────
+  passed   :      440
+  rejected :        0
+  time     :    19.3s
+  output   : lexsi_hackathon_artifacts/exp10_operator_rank_decomposition/curatorkit_data/curator_staged
+────────────────────────────────────────────
+🛡️ CuratorKIT + Cross-Split MinHash Leak Audit: raw=440 -> CuratorKIT=440 -> final_clean=440 (removed exact=0, minhash=0 | test=220 | post_filter_leaks=0)
+✅ exp10 Datasets Ready | OR train=360 test=170 | FE train=440 test=220
+[Cell 4 finished in 92.3s | rc=0]
+
+--- [Cell 5 / Exec #5] ---
+🔬 Extracting OverRefusal activations...
+exp10 OverRefusal (side=0):   0%|          | 0/8 [00:00<?, ?it/s]
+exp10 OverRefusal (side=1):   0%|          | 0/8 [00:00<?, ?it/s]
+Fitting rich factorial subspaces:   0%|          | 0/36 [00:00<?, ?it/s]
+🔬 Extracting Epistemic activations...
+exp10 Epistemic (side=0):   0%|          | 0/10 [00:00<?, ?it/s]
+exp10 Epistemic (side=1):   0%|          | 0/10 [00:00<?, ?it/s]
+Fitting rich factorial subspaces:   0%|          | 0/36 [00:00<?, ?it/s]
+🏆 OR Window=[27, 28, 29, 30] (PC1 EVR=0.623) | FE Window=[17, 18, 19, 20, 21] (PC1 EVR=0.295)
+[Cell 5 finished in 48.2s | rc=0]
+
+--- [Cell 6 / Exec #6] ---
+
+🎯 [OverRefusal] Exact Layerwise L2 Budget Target Mean=5.1465 | Base Acc=55.29%
+
+🎯 [Epistemic] Exact Layerwise L2 Budget Target Mean=1.4085 | Base Acc=61.82%
+
+📊 Top Results per Task:
+       Task                      Method    Family  Rank_k   Operator  Mean_Delta_L2  Semantic_Sim  Overall_Acc (%)  Safe_Comply (%)  Harm_Refuse (%)  XSTest_OR (%)
+OverRefusal      Unsup PCA (k=1) [Proj] unsup_pca       1 projection         4.1798        0.9970            78.24            62.11            98.67          14.75
+OverRefusal Supervised SVD (k=3) [Proj]   sup_svd       3 projection         5.0038        0.9934            76.47            58.95            98.67          21.31
+OverRefusal      Unsup PCA (k=3) [Proj] unsup_pca       3 projection         4.6122        0.9895            75.29            55.79           100.00          24.59
+OverRefusal      Unsup PCA (k=2) [Proj] unsup_pca       2 projection         5.1023        0.9965            74.71            54.74           100.00          22.95
+OverRefusal   Anchored PCA (k=2) [Proj]  anch_pca       2 projection         5.1158        0.9945            74.71            55.79            98.67          22.95
+OverRefusal Supervised SVD (k=2) [Proj]   sup_svd       2 projection         4.8381        0.9949            74.12            53.68           100.00          24.59
+OverRefusal Supervised SVD (k=5) [Proj]   sup_svd       5 projection         4.8786        0.9847            72.94            51.58           100.00          27.87
+OverRefusal   Anchored PCA (k=3) [Proj]  anch_pca       3 projection         5.0413        0.9945            71.18            48.42           100.00          29.51
+     Task                      Method    Family  Rank_k Operator  Mean_Delta_L2  Semantic_Sim  Overall_Acc (%)  FaithEval_Counterfactual  FaithEval_Inconsistent  FaithEval_Unanswerable  TruthfulQA
+Epistemic Supervised SVD (k=2) [Addi]   sup_svd       2 additive         1.4086        0.9254            66.82                     49.09                   70.91                   100.0       47.27
+Epistemic   Anchored PCA (k=2) [Addi]  anch_pca       2 additive         1.4086        0.9305            66.36                     47.27                   72.73                   100.0       45.45
+Epistemic     SV Diff-of-Means [Addi]    sv_dom       1 additive         1.4085        0.8664            65.91                     47.27                   69.09                   100.0       47.27
+Epistemic      Unsup PCA (k=2) [Addi] unsup_pca       2 additive         1.4085        0.8805            65.91                     47.27                   69.09                   100.0       47.27
+Epistemic      Unsup PCA (k=3) [Addi] unsup_pca       3 additive         1.4085        0.9410            65.45                     47.27                   67.27                   100.0       47.27
+Epistemic   Anchored PCA (k=3) [Addi]  anch_pca       3 additive         1.4085        0.9462            65.00                     50.91                   63.64                   100.0       45.45
+Epistemic Supervised SVD (k=3) [Addi]   sup_svd       3 additive         1.4086        0.9669            64.55                     47.27                   67.27                   100.0       43.64
+Epistemic      Unsup PCA (k=8) [Addi] unsup_pca       8 additive         1.4086        0.9741            64.55                     49.09                   63.64                   100.0       45.45
+[Cell 6 finished in 1073.0s | rc=0]
+
+--- [Cell 7 / Exec #7] ---
+🔍 AuditKIT Key Hypothesis Tests:
+  OverRefusal: SV_Add vs SV_Proj: delta=+0.0000 CI=[-0.0176,+0.0176] p=1.0000 sig=False
+  OverRefusal: SV_Add vs AnchoredPCA_k5_Proj: delta=-0.1294 CI=[-0.1824,-0.0824] p=0.0010 sig=True
+  OverRefusal: Unsup_PC1 vs SV_Dom (Proj): delta=+0.2529 CI=[+0.1941,+0.3235] p=0.0010 sig=True
+  OverRefusal: SupSVD_k5 vs AnchoredPCA_k5 (Proj): delta=+0.0706 CI=[+0.0353,+0.1118] p=0.0030 sig=True
+  OverRefusal: AnchPCA_k3 vs k8 (Add): delta=-0.0176 CI=[-0.0471,+0.0059] p=0.2697 sig=False
+  Epistemic: SV_Add vs SV_Proj: delta=+0.1136 CI=[+0.0727,+0.1636] p=0.0010 sig=True
+  Epistemic: SV_Add vs AnchoredPCA_k5_Proj: delta=+0.0909 CI=[+0.0545,+0.1319] p=0.0010 sig=True
+  Epistemic: Unsup_PC1 vs SV_Dom (Proj): delta=+0.0727 CI=[+0.0364,+0.1182] p=0.0010 sig=True
+  Epistemic: SupSVD_k5 vs AnchoredPCA_k5 (Proj): delta=-0.0364 CI=[-0.0636,-0.0136] p=0.0250 sig=True
+  Epistemic: AnchPCA_k3 vs k8 (Add): delta=+0.0364 CI=[+0.0136,+0.0636] p=0.0050 sig=True
+README.md:   0%|          | 0.00/9.00k [00:00<?, ?B/s]
+ARC-Challenge/train-00000-of-00001.parqu(…): reconstructing file:   0%|        
+|  0.00B /  190kB            
+ARC-Challenge/train-00000-of-00001.parqu(…): downloading bytes:           |  
+0.00B            
+ARC-Challenge/test-00000-of-00001.parque(…): reconstructing file:   0%|        
+|  0.00B /  204kB            
+ARC-Challenge/test-00000-of-00001.parque(…): downloading bytes:           |  
+0.00B            
+ARC-Challenge/validation-00000-of-00001.(…): reconstructing file:   0%|        
+|  0.00B / 55.7kB            
+ARC-Challenge/validation-00000-of-00001.(…): downloading bytes:           |  
+0.00B            
+Generating train split:   0%|          | 0/1119 [00:00<?, ? examples/s]
+Generating test split:   0%|          | 0/1172 [00:00<?, ? examples/s]
+Generating validation split:   0%|          | 0/299 [00:00<?, ? examples/s]
+README.md:   0%|          | 0.00/7.93k [00:00<?, ?B/s]
+main/train-00000-of-00001.parquet: reconstructing file:   0%|          |  0.00B
+/ 2.31MB            
+main/train-00000-of-00001.parquet: downloading bytes:           |  0.00B       
+main/test-00000-of-00001.parquet: reconstructing file:   0%|          |  0.00B 
+/  419kB            
+main/test-00000-of-00001.parquet: downloading bytes:           |  0.00B        
+Generating train split:   0%|          | 0/7473 [00:00<?, ? examples/s]
+Generating test split:   0%|          | 0/1319 [00:00<?, ? examples/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+   ✅ Side-Effect Audit [Base (Unsteered)]: XSTest_OR=5.0% | ARC=74.0% | GSM8K=54.3% | RT_RefusalPass=100.0% | RT_InjectPass=62.5%
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+   ✅ Side-Effect Audit [OR SV [Add]]: XSTest_OR=10.0% | ARC=74.0% | GSM8K=42.9% | RT_RefusalPass=100.0% | RT_InjectPass=62.5%
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+   ✅ Side-Effect Audit [FE SV [Add]]: XSTest_OR=7.5% | ARC=80.0% | GSM8K=51.4% | RT_RefusalPass=100.0% | RT_InjectPass=62.5%
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating responses:   0%|          | 0/1 [00:00<?, ?it/s]
+   ✅ Side-Effect Audit [FE PCA (k=5) [Proj]]: XSTest_OR=5.0% | ARC=78.0% | GSM8K=45.7% | RT_RefusalPass=100.0% | RT_InjectPass=62.5%
+💾 Saved Side-Effect & Capability Audit -> lexsi_hackathon_artifacts/exp10_operator_rank_decomposition/evaluation_and_judge_logs/hiring_rubric_side_effect_audit.csv
+| Config | XSTest_OverRefusal (%) | ARC_Challenge_Acc (%) | GSM8K_Acc (%) |    
+AuditKIT_Toxicity_Clean | AuditKIT_Repr_Skew | AuditKIT_ChrF_vs_Base |         
+AuditKIT_F1_vs_Base | AuditKIT_WordCount_Valid | RedTeam_Harmless_Pass (%) |   
+RedTeam_Inject_Resist (%)                                                      
+---|---|---|---|---|---|---|---|---|---|---|---                                
+0 | Base (Unsteered) | 5.0 | 74.0 | 54.29 | 0.9889 | 0.0 | 1.0000 | 1.0000 |   
+1.0 | 100.0 | 62.5                                                             
+1 | OR SV [Add] | 10.0 | 74.0 | 42.86 | 0.9911 | 0.0 | 0.6205 | 0.5838 | 1.0 | 
+100.0 | 62.5                                                                   
+2 | FE SV [Add] | 7.5 | 80.0 | 51.43 | 0.9867 | 0.0 | 0.6168 | 0.5907 | 1.0 |  
+100.0 | 62.5                                                                   
+3 | FE PCA (k=5) [Proj] | 5.0 | 78.0 | 45.71 | 0.9911 | 0.0 | 0.5755 | 0.5225 |
+1.0 | 100.0 | 62.5                                                             
+[Cell 7 finished in 139.2s | rc=0]
+
+--- [Cell 8 / Exec #8] ---
+📦 Phase 2 Suite exp10_operator_rank_decomposition complete | artifacts in lexsi_hackathon_artifacts/exp10_operator_rank_decomposition
+[Cell 8 finished in 4.0s | rc=0]
+TAR_READY /content/exp10_artifacts.tar.gz 24212978

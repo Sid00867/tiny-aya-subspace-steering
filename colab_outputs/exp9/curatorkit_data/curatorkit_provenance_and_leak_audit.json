@@ -1,0 +1,47 @@
+{
+  "suite_id": "exp9_normative_ethics_entanglement",
+  "raw_train_count": 750,
+  "curator_passed_count": 744,
+  "curator_rejected_count": 0,
+  "cross_split_exact_leaks_removed": 0,
+  "cross_split_minhash_leaks_removed": 0,
+  "final_certified_train_count": 744,
+  "heldout_test_count": 250,
+  "post_filter_exact_leaks": 0,
+  "minhash_threshold": 0.85,
+  "curator_stage_counts": {
+    "JSONLReader": {
+      "output_count": 750,
+      "rejected_count": 0
+    },
+    "SchemaGate": {
+      "input_count": 750,
+      "output_count": 750,
+      "probe_recovered": 0,
+      "rejected_count": 0
+    },
+    "ExactDeduplicator": {
+      "input_count": 750,
+      "output_count": 750
+    },
+    "MinHashDeduplicator": {
+      "input_count": 750,
+      "output_count": 744
+    },
+    "TextCleaner": {
+      "input_count": 744,
+      "output_count": 744
+    },
+    "SecretsGate": {
+      "input_count": 744,
+      "output_count": 744,
+      "probe_recovered": 0,
+      "rejected_count": 0
+    },
+    "DPOExporter": {
+      "exported_count": 744
+    }
+  },
+  "leaked_samples_removed": [],
+  "curated_dpo_sha256": "c9593b6a0e51d1e9161ffca33704ca5e1ff3f9bf9dc29542eb2eff88f1c4565a"
+}
